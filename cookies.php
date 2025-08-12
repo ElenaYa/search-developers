@@ -1,5 +1,4 @@
 <?php
-// TODO: Replace placeholders with actual company information
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -23,12 +22,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
@@ -43,7 +42,6 @@
         </div>
     </div>
 
-    <!-- Cookie Settings Modal -->
     <div id="cookie-settings-modal" class="modal cookie-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -156,15 +154,7 @@
                     <a href="about.php" class="nav-link">О нас</a>
                     <a href="offers.php" class="nav-link">Что ищем/предлагаем</a>
                     <a href="contacts.php" class="nav-link">Контакты</a>
-                    <div class="nav-dropdown">
-                        <span class="nav-link active">Политики</span>
-                        <div class="dropdown-content">
-                            <a href="privacy.php">Конфиденциальность</a>
-                            <a href="cookies.php" class="active">Cookies</a>
-                            <a href="terms.php">Условия использования</a>
-                            <a href="gdpr.php">GDPR</a>
-                        </div>
-                    </div>
+                  
                 </nav>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -221,7 +211,7 @@
                             <div class="usage-grid">
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="img/icon-security.svg" alt="Безопасность">
+                                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                                     </div>
                                     <h3>Безопасность</h3>
                                     <p>Защита от мошенничества и обеспечение безопасности пользователей</p>
@@ -229,7 +219,7 @@
                                 
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="img/icon-performance.svg" alt="Производительность">
+                                        <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
                                     </div>
                                     <h3>Производительность</h3>
                                     <p>Оптимизация загрузки страниц и улучшение работы сайта</p>
@@ -237,7 +227,7 @@
                                 
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="img/icon-personalization.svg" alt="Персонализация">
+                                        <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
                                     </div>
                                     <h3>Персонализация</h3>
                                     <p>Сохранение ваших предпочтений и настроек</p>
@@ -245,7 +235,7 @@
                                 
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="img/icon-analytics.svg" alt="Аналитика">
+                                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                                     </div>
                                     <h3>Аналитика</h3>
                                     <p>Понимание того, как посетители используют наш сайт</p>
@@ -396,7 +386,7 @@
                             <div class="third-party-services">
                                 <div class="service-card">
                                     <div class="service-header">
-                                        <img src="img/service-google-analytics.svg" alt="Google Analytics" class="service-logo">
+                                        <i class="fa-brands fa-google service-logo" aria-hidden="true"></i>
                                         <div class="service-info">
                                             <h3>Google Analytics</h3>
                                             <span class="service-type">Аналитика</span>
@@ -408,7 +398,7 @@
                                 
                                 <div class="service-card">
                                     <div class="service-header">
-                                        <img src="img/service-facebook.svg" alt="Facebook" class="service-logo">
+                                        <i class="fa-brands fa-facebook service-logo" aria-hidden="true"></i>
                                         <div class="service-info">
                                             <h3>Facebook Pixel</h3>
                                             <span class="service-type">Реклама</span>
@@ -420,7 +410,7 @@
                                 
                                 <div class="service-card">
                                     <div class="service-header">
-                                        <img src="img/service-linkedin.svg" alt="LinkedIn" class="service-logo">
+                                        <i class="fa-brands fa-linkedin service-logo" aria-hidden="true"></i>
                                         <div class="service-info">
                                             <h3>LinkedIn Insight Tag</h3>
                                             <span class="service-type">Реклама</span>
@@ -447,7 +437,7 @@
                             <div class="browser-instructions">
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="img/browser-chrome.svg" alt="Chrome">
+                                        <i class="fa-brands fa-chrome" aria-hidden="true"></i>
                                         Google Chrome
                                     </summary>
                                     <div class="browser-steps">
@@ -462,7 +452,7 @@
                                 
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="img/browser-firefox.svg" alt="Firefox">
+                                        <i class="fa-brands fa-firefox-browser" aria-hidden="true"></i>
                                         Mozilla Firefox
                                     </summary>
                                     <div class="browser-steps">
@@ -476,7 +466,7 @@
                                 
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="img/browser-safari.svg" alt="Safari">
+                                        <i class="fa-brands fa-safari" aria-hidden="true"></i>
                                         Safari
                                     </summary>
                                     <div class="browser-steps">
@@ -490,7 +480,7 @@
                                 
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="img/browser-edge.svg" alt="Edge">
+                                        <i class="fa-brands fa-edge" aria-hidden="true"></i>
                                         Microsoft Edge
                                     </summary>
                                     <div class="browser-steps">
@@ -524,8 +514,7 @@
                             <h3>Контактная информация</h3>
                             <p>Если у вас есть вопросы о нашем использовании cookies, свяжитесь с нами:</p>
                             <div class="contact-details">
-                                <!-- TODO: Replace with actual email -->
-                                <p><strong>Email:</strong> privacy@frevonto.com<br>
+                                <p><strong>Email:</strong> info@frevonto.com<br>
                                 <strong>Телефон:</strong> +372 5554 9123<br>
                                 <strong>Адрес:</strong> Tartu mnt 25, 10117 Tallinn, Estonia</p>
                             </div>
@@ -535,7 +524,6 @@
                     <div class="legal-footer">
                         <p>Дата вступления в силу: <?php echo date('d.m.Y'); ?></p>
                         <div class="legal-actions">
-                            <button class="btn btn-primary manage-cookies-btn">Настройки cookies</button>
                             <a href="privacy.php" class="btn btn-secondary">Политика конфиденциальности</a>
                         </div>
                     </div>
@@ -543,7 +531,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -554,13 +541,33 @@
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
+                      
                     </div>
                     <div class="footer-nav">
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Компания</h4>
+                            <nav class="footer-links">
+                                <a href="about.php">О нас</a>
+                                <a href="offers.php">Вакансии</a>
+                                <a href="offers.php#design">Дизайн-услуги</a>
+                                <a href="contacts.php">Контакты</a>
+                            </nav>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Специалисты</h4>
+                            <nav class="footer-links">
+                                <a href="offers.php#designer">UI/UX Дизайнеры</a>
+                                <a href="offers.php#frontend">Frontend разработчики</a>
+                                <a href="offers.php#php">PHP разработчики</a>
+                                <a href="offers.php#qa">QA инженеры</a>
+                                <a href="offers.php#pm">Project Manager</a>
+                            </nav>
+                        </div>
                         <div class="footer-column">
                             <h4 class="footer-column-title">Правовая информация</h4>
                             <nav class="footer-links">
                                 <a href="privacy.php">Конфиденциальность</a>
-                                <a href="cookies.php" class="active">Cookies</a>
+                                <a href="cookies.php">Cookies</a>
                                 <a href="terms.php">Условия использования</a>
                                 <a href="gdpr.php">GDPR</a>
                             </nav>
@@ -570,10 +577,29 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
+                            <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
+                            <div>
+                                <a href="https://maps.google.com/?q=Tartu+mnt+25,+10117+Tallinn,+Estonia" target="_blank" rel="noopener" class="contact-link">
+                                    <strong>Tartu mnt 25</strong><br>
+                                    10117 Tallinn, Estonia
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
+                            <div>
+                                <a href="tel:+37255549123" class="contact-link">
+                                    <strong>+372 5554 9123</strong>
+                                </a><br>
+                                Пн-Пт: 9:00-18:00 EET
+                            </div>
+                        </div>
+                        <div class="contact-item">
                             <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual email -->
-                                <strong>info@frevonto.com</strong><br>
+                                <a href="mailto:info@frevonto.com" class="contact-link">
+                                    <strong>info@frevonto.com</strong>
+                                </a><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -582,7 +608,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
-                <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
+               
             </div>
         </div>
     </footer>

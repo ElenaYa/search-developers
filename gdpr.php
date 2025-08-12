@@ -1,5 +1,4 @@
 <?php
-// TODO: Replace placeholders with actual company information
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -23,11 +22,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>Использование cookies</h3>
+                <p>Мы используем cookies для улучшения работы сайта и анализа трафика. Вы можете выбрать, какие cookies разрешить.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="btn btn-secondary cookie-settings-btn">Настройки</button>
+                <button class="btn btn-primary cookie-accept-all">Принять все</button>
+                <button class="btn btn-outline cookie-reject-all">Отклонить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-settings-modal" class="modal cookie-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Настройки cookies</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="cookie-settings-content">
+                <p>Выберите категории cookies, которые вы хотите разрешить:</p>
+                
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="necessary" checked disabled>
+                            <span class="cookie-category-title">Необходимые cookies</span>
+                            <span class="cookie-category-required">Обязательные</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Эти cookies необходимы для базового функционирования сайта и не могут быть отключены.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Сессия:</strong> Сохранение состояния сессии пользователя</li>
+                                <li><strong>Безопасность:</strong> Защита от CSRF-атак</li>
+                                <li><strong>Согласие:</strong> Сохранение выбранных настроек cookies</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="analytics">
+                            <span class="cookie-category-title">Аналитические cookies</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Помогают нам понимать, как посетители взаимодействуют с сайтом, собирая анонимную информацию.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Посещения:</strong> Количество посетителей и просмотров страниц</li>
+                                <li><strong>Поведение:</strong> Какие страницы наиболее популярны</li>
+                                <li><strong>Производительность:</strong> Время загрузки страниц</li>
+                                <li><strong>Ошибки:</strong> Отслеживание технических проблем</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="marketing">
+                            <span class="cookie-category-title">Маркетинговые cookies</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Используются для показа релевантной рекламы и измерения эффективности рекламных кампаний.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Реклама:</strong> Персонализация рекламных объявлений</li>
+                                <li><strong>Ретаргетинг:</strong> Показ релевантных предложений</li>
+                                <li><strong>Социальные сети:</strong> Интеграция с социальными платформами</li>
+                                <li><strong>Email-маркетинг:</strong> Отслеживание эффективности рассылок</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="functional">
+                            <span class="cookie-category-title">Функциональные cookies</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Обеспечивают расширенную функциональность и персонализацию сайта.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Предпочтения:</strong> Сохранение выбранного языка и темы</li>
+                                <li><strong>Чат:</strong> Функционирование системы онлайн-поддержки</li>
+                                <li><strong>Формы:</strong> Сохранение заполненных данных</li>
+                                <li><strong>Видео:</strong> Интеграция с видеоплатформами</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-settings-actions">
+                <button class="btn btn-secondary cookie-save-settings">Сохранить настройки</button>
+                <button class="btn btn-primary cookie-accept-selected">Принять выбранные</button>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -40,15 +155,7 @@
                     <a href="about.php" class="nav-link">О нас</a>
                     <a href="offers.php" class="nav-link">Что ищем/предлагаем</a>
                     <a href="contacts.php" class="nav-link">Контакты</a>
-                    <div class="nav-dropdown">
-                        <span class="nav-link active">Политики</span>
-                        <div class="dropdown-content">
-                            <a href="privacy.php">Конфиденциальность</a>
-                            <a href="cookies.php">Cookies</a>
-                            <a href="terms.php">Условия использования</a>
-                            <a href="gdpr.php" class="active">GDPR</a>
-                        </div>
-                    </div>
+                  
                 </nav>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -84,7 +191,6 @@
                             <a href="#retention">Сроки хранения</a>
                             <a href="#requests">Подача запросов</a>
                             <a href="#complaints">Жалобы</a>
-                            <a href="#contact-dpo">Контакт DPO</a>
                         </nav>
                     </div>
 
@@ -96,8 +202,7 @@
                                 <div class="controller-card">
                                     <h3>Frevonto</h3>
                                     <div class="controller-details">
-                                        <!-- TODO: Replace with actual information -->
-                                        <p><strong>Регистрационный номер:</strong> [COMPANY_REG_NUMBER]</p>
+                                     
                                          <p><strong>Юридический адрес:</strong> Tartu mnt 25, 10117 Tallinn, Estonia</p>
                                          <p><strong>Email:</strong> privacy@frevonto.com</p>
                                          <p><strong>Телефон:</strong> +372 5554 9123</p>
@@ -110,8 +215,7 @@
                             <p>Мы назначили ответственного за защиту персональных данных для обеспечения соблюдения требований GDPR:</p>
                             
                             <div class="dpo-info">
-                                <!-- TODO: Replace with actual DPO information -->
-                                <p><strong>Имя:</strong> [DPO_NAME]<br>
+                          
                                 <strong>Email:</strong> dpo@frevonto.com<br>
                                 <strong>Телефон:</strong> +372 5554 9123<br>
                                 <strong>Почтовый адрес:</strong> Tartu mnt 25, 10117 Tallinn, Estonia</p>
@@ -125,7 +229,7 @@
                             <div class="rights-detailed">
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-info.svg" alt="Право на информацию">
+                                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на информацию</h3>
@@ -145,7 +249,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-access.svg" alt="Право на доступ">
+                                        <i class="fa-solid fa-id-card" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на доступ (статья 15)</h3>
@@ -166,7 +270,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-rectify.svg" alt="Право на исправление">
+                                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на исправление (статья 16)</h3>
@@ -185,7 +289,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-erase.svg" alt="Право на удаление">
+                                        <i class="fa-solid fa-eraser" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на удаление / "Право быть забытым" (статья 17)</h3>
@@ -207,7 +311,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-restrict.svg" alt="Право на ограничение">
+                                        <i class="fa-solid fa-lock" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на ограничение обработки (статья 18)</h3>
@@ -226,7 +330,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-portability.svg" alt="Право на переносимость">
+                                        <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на переносимость данных (статья 20)</h3>
@@ -246,7 +350,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-object.svg" alt="Право на возражение">
+                                        <i class="fa-solid fa-hand" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на возражение (статья 21)</h3>
@@ -264,7 +368,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="img/icon-withdraw.svg" alt="Отзыв согласия">
+                                        <i class="fa-solid fa-user-slash" aria-hidden="true"></i>
                                     </div>
                                     <div class="right-content">
                                         <h3>Отзыв согласия</h3>
@@ -466,12 +570,6 @@
                                     <p><strong>Адрес:</strong> Frevonto, GDPR Requests<br>
                                     Tartu mnt 25, 10117 Tallinn, Estonia</p>
                                 </div>
-
-                                <div class="request-method">
-                                    <h4>📱 Через онлайн-форму</h4>
-                                    <p>Используйте нашу защищенную форму для подачи запросов:</p>
-                                    <a href="#gdpr-request-form" class="btn btn-secondary">Форма запроса GDPR</a>
-                                </div>
                             </div>
 
                             <h3>6.2 Требования к запросам</h3>
@@ -553,7 +651,7 @@
                             <p>Если вы не удовлетворены тем, как мы обработали ваш запрос или обрабатываем ваши данные, сначала свяжитесь с нами:</p>
                             
                             <div class="complaint-contact">
-                                <p><strong>Email:</strong> complaints@frevonto.com<br>
+                                <p><strong>Email:</strong> info@frevonto.com<br>
                                 <strong>Тема:</strong> "GDPR Complaint"<br>
                                 <strong>Срок рассмотрения:</strong> 14 рабочих дней</p>
                             </div>
@@ -583,151 +681,15 @@
                                 <li>Нарушений ваших прав в рамках GDPR</li>
                             </ul>
                         </section>
-
-                        <section id="contact-dpo" class="legal-section">
-                            <h2>8. Контакт с ответственным за защиту данных</h2>
-                            
-                            <div class="dpo-contact">
-                                <div class="dpo-card">
-                                    <h3>Ответственный за защиту персональных данных (DPO)</h3>
-                                    <div class="dpo-details">
-                                        <!-- TODO: Replace with actual DPO information -->
-                                        <p><strong>Имя:</strong> [DPO_NAME]<br>
-                                        <strong>Должность:</strong> Data Protection Officer<br>
-                                        <strong>Email:</strong> dpo@frevonto.com<br>
-                                        <strong>Прямой телефон:</strong> +372 5554 9123<br>
-                                        <strong>Часы работы:</strong> Пн-Пт: 9:00-17:00 EET</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>Когда обращаться к DPO</h3>
-                            <div class="dpo-responsibilities">
-                                <ul>
-                                    <li>Вопросы о ваших правах на защиту данных</li>
-                                    <li>Запросы на доступ, исправление или удаление данных</li>
-                                    <li>Отзыв согласия на обработку данных</li>
-                                    <li>Жалобы на обработку персональных данных</li>
-                                    <li>Вопросы о том, как мы используем ваши данные</li>
-                                    <li>Консультации по вопросам защиты данных</li>
-                                </ul>
-                            </div>
-
-                            <h3>Время ответа</h3>
-                            <p>Мы стремимся отвечать на все запросы к DPO в следующие сроки:</p>
-                            <ul>
-                                <li><strong>Простые вопросы:</strong> 3 рабочих дня</li>
-                                <li><strong>Запросы на доступ к данным:</strong> 1 месяц</li>
-                                <li><strong>Сложные случаи:</strong> до 3 месяцев (с уведомлением)</li>
-                                <li><strong>Экстренные ситуации:</strong> В течение 24 часов</li>
-                            </ul>
-                        </section>
-
-                        <!-- GDPR Request Form -->
-                        <section id="gdpr-request-form" class="legal-section">
-                            <h2>9. Форма запроса GDPR</h2>
-                            
-                            <div class="gdpr-form-wrapper">
-                                <form class="gdpr-request-form" id="gdpr-form">
-                                    <div class="form-section">
-                                        <h3>Личная информация</h3>
-                                        <div class="form-row">
-                                            <div class="form-group">
-                                                <label for="gdpr-first-name">Имя *</label>
-                                                <input type="text" id="gdpr-first-name" name="first_name" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="gdpr-last-name">Фамилия *</label>
-                                                <input type="text" id="gdpr-last-name" name="last_name" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="gdpr-email">Email *</label>
-                                            <input type="email" id="gdpr-email" name="email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="gdpr-phone">Телефон</label>
-                                            <input type="tel" id="gdpr-phone" name="phone">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-section">
-                                        <h3>Тип запроса</h3>
-                                        <div class="form-group">
-                                            <label for="gdpr-request-type">Выберите тип запроса *</label>
-                                            <select id="gdpr-request-type" name="request_type" required>
-                                                <option value="">Выберите тип запроса</option>
-                                                <option value="access">Доступ к данным (статья 15)</option>
-                                                <option value="rectification">Исправление данных (статья 16)</option>
-                                                <option value="erasure">Удаление данных (статья 17)</option>
-                                                <option value="restriction">Ограничение обработки (статья 18)</option>
-                                                <option value="portability">Переносимость данных (статья 20)</option>
-                                                <option value="objection">Возражение против обработки (статья 21)</option>
-                                                <option value="withdraw-consent">Отзыв согласия</option>
-                                                <option value="complaint">Жалоба на обработку данных</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-section">
-                                        <h3>Детали запроса</h3>
-                                        <div class="form-group">
-                                            <label for="gdpr-details">Подробности запроса *</label>
-                                            <textarea id="gdpr-details" name="details" rows="5" placeholder="Опишите ваш запрос подробно..." required></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="gdpr-context">Контекст взаимодействия</label>
-                                            <textarea id="gdpr-context" name="context" rows="3" placeholder="Когда и как вы взаимодействовали с нами (например: подавали заявку на вакансию в январе 2024)"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-section">
-                                        <h3>Подтверждение личности</h3>
-                                        <div class="form-group">
-                                            <label for="gdpr-id-document">Документ, удостоверяющий личность</label>
-                                            <input type="file" id="gdpr-id-document" name="id_document" accept=".pdf,.jpg,.png">
-                                            <small>Загрузите копию паспорта или ID-карты (первая страница достаточно)</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-section">
-                                        <div class="form-group checkbox-group">
-                                            <label class="checkbox-label">
-                                                <input type="checkbox" name="identity_confirmation" required>
-                                                <span class="checkmark"></span>
-                                                Подтверждаю, что являюсь лицом, данные которого запрашиваю, и предоставленная информация является достоверной *
-                                            </label>
-                                        </div>
-                                        <div class="form-group checkbox-group">
-                                            <label class="checkbox-label">
-                                                <input type="checkbox" name="privacy_consent" required>
-                                                <span class="checkmark"></span>
-                                                Согласен с <a href="privacy.php" target="_blank">политикой конфиденциальности</a> в части обработки данных для рассмотрения данного запроса *
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary btn-large">Отправить запрос GDPR</button>
-                                        <button type="reset" class="btn btn-secondary">Очистить форму</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </section>
                     </div>
 
                     <div class="legal-footer">
                         <p>Дата вступления в силу: <?php echo date('d.m.Y'); ?></p>
-                        <div class="legal-actions">
-                            <a href="#gdpr-request-form" class="btn btn-primary">Подать запрос GDPR</a>
-                            <a href="privacy.php" class="btn btn-secondary">Политика конфиденциальности</a>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -738,15 +700,35 @@
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
+                      
                     </div>
                     <div class="footer-nav">
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Компания</h4>
+                            <nav class="footer-links">
+                                <a href="about.php">О нас</a>
+                                <a href="offers.php">Вакансии</a>
+                                <a href="offers.php#design">Дизайн-услуги</a>
+                                <a href="contacts.php">Контакты</a>
+                            </nav>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Специалисты</h4>
+                            <nav class="footer-links">
+                                <a href="offers.php#designer">UI/UX Дизайнеры</a>
+                                <a href="offers.php#frontend">Frontend разработчики</a>
+                                <a href="offers.php#php">PHP разработчики</a>
+                                <a href="offers.php#qa">QA инженеры</a>
+                                <a href="offers.php#pm">Project Manager</a>
+                            </nav>
+                        </div>
                         <div class="footer-column">
                             <h4 class="footer-column-title">Правовая информация</h4>
                             <nav class="footer-links">
                                 <a href="privacy.php">Конфиденциальность</a>
                                 <a href="cookies.php">Cookies</a>
                                 <a href="terms.php">Условия использования</a>
-                                <a href="gdpr.php" class="active">GDPR</a>
+                                <a href="gdpr.php">GDPR</a>
                             </nav>
                         </div>
                     </div>
@@ -754,11 +736,30 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
+                            <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
+                            <div>
+                                <a href="https://maps.google.com/?q=Tartu+mnt+25,+10117+Tallinn,+Estonia" target="_blank" rel="noopener" class="contact-link">
+                                    <strong>Tartu mnt 25</strong><br>
+                                    10117 Tallinn, Estonia
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
+                            <div>
+                                <a href="tel:+37255549123" class="contact-link">
+                                    <strong>+372 5554 9123</strong>
+                                </a><br>
+                                Пн-Пт: 9:00-18:00 EET
+                            </div>
+                        </div>
+                        <div class="contact-item">
                             <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual email -->
-                                <strong>dpo@frevonto.com</strong><br>
-                                Вопросы по защите данных
+                                <a href="mailto:info@frevonto.com" class="contact-link">
+                                    <strong>info@frevonto.com</strong>
+                                </a><br>
+                                Ответим в течение 24 часов
                             </div>
                         </div>
                     </div>
@@ -766,7 +767,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
-                <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
+               
             </div>
         </div>
     </footer>

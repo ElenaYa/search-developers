@@ -28,6 +28,121 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>Использование cookies</h3>
+                <p>Мы используем cookies для улучшения работы сайта и анализа трафика. Вы можете выбрать, какие cookies разрешить.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="btn btn-secondary cookie-settings-btn">Настройки</button>
+                <button class="btn btn-primary cookie-accept-all">Принять все</button>
+                <button class="btn btn-outline cookie-reject-all">Отклонить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-settings-modal" class="modal cookie-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Настройки cookies</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="cookie-settings-content">
+                <p>Выберите категории cookies, которые вы хотите разрешить:</p>
+                
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="necessary" checked disabled>
+                            <span class="cookie-category-title">Необходимые cookies</span>
+                            <span class="cookie-category-required">Обязательные</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Эти cookies необходимы для базового функционирования сайта и не могут быть отключены.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Сессия:</strong> Сохранение состояния сессии пользователя</li>
+                                <li><strong>Безопасность:</strong> Защита от CSRF-атак</li>
+                                <li><strong>Согласие:</strong> Сохранение выбранных настроек cookies</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="analytics">
+                            <span class="cookie-category-title">Аналитические cookies</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Помогают нам понимать, как посетители взаимодействуют с сайтом, собирая анонимную информацию.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Посещения:</strong> Количество посетителей и просмотров страниц</li>
+                                <li><strong>Поведение:</strong> Какие страницы наиболее популярны</li>
+                                <li><strong>Производительность:</strong> Время загрузки страниц</li>
+                                <li><strong>Ошибки:</strong> Отслеживание технических проблем</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="marketing">
+                            <span class="cookie-category-title">Маркетинговые cookies</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Используются для показа релевантной рекламы и измерения эффективности рекламных кампаний.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Реклама:</strong> Персонализация рекламных объявлений</li>
+                                <li><strong>Ретаргетинг:</strong> Показ релевантных предложений</li>
+                                <li><strong>Социальные сети:</strong> Интеграция с социальными платформами</li>
+                                <li><strong>Email-маркетинг:</strong> Отслеживание эффективности рассылок</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-category-label">
+                            <input type="checkbox" class="cookie-toggle" data-category="functional">
+                            <span class="cookie-category-title">Функциональные cookies</span>
+                        </label>
+                    </div>
+                    <div class="cookie-category-description">
+                        <p>Обеспечивают расширенную функциональность и персонализацию сайта.</p>
+                        <details class="cookie-details">
+                            <summary>Подробнее</summary>
+                            <ul>
+                                <li><strong>Предпочтения:</strong> Сохранение выбранного языка и темы</li>
+                                <li><strong>Чат:</strong> Функционирование системы онлайн-поддержки</li>
+                                <li><strong>Формы:</strong> Сохранение заполненных данных</li>
+                                <li><strong>Видео:</strong> Интеграция с видеоплатформами</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-settings-actions">
+                <button class="btn btn-secondary cookie-save-settings">Сохранить настройки</button>
+                <button class="btn btn-primary cookie-accept-selected">Принять выбранные</button>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -40,15 +155,7 @@
                     <a href="about.php" class="nav-link active">О нас</a>
                     <a href="offers.php" class="nav-link">Что ищем/предлагаем</a>
                     <a href="contacts.php" class="nav-link">Контакты</a>
-                    <div class="nav-dropdown">
-                        <span class="nav-link">Политики</span>
-                        <div class="dropdown-content">
-                            <a href="privacy.php">Конфиденциальность</a>
-                            <a href="cookies.php">Cookies</a>
-                            <a href="terms.php">Условия использования</a>
-                            <a href="gdpr.php">GDPR</a>
-                        </div>
-                    </div>
+                  
                 </nav>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -423,7 +530,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -472,24 +578,27 @@
                         <div class="contact-item">
                             <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual address -->
-                                <strong>Tartu mnt 25</strong><br>
-                                10117 Tallinn, Estonia
+                                <a href="https://maps.google.com/?q=Tartu+mnt+25,+10117+Tallinn,+Estonia" target="_blank" rel="noopener" class="contact-link">
+                                    <strong>Tartu mnt 25</strong><br>
+                                    10117 Tallinn, Estonia
+                                </a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual phone -->
-                                <strong>+372 5554 9123</strong><br>
+                                <a href="tel:+37255549123" class="contact-link">
+                                    <strong>+372 5554 9123</strong>
+                                </a><br>
                                 Пн-Пт: 9:00-18:00 EET
                             </div>
                         </div>
                         <div class="contact-item">
-                                <img src="img/icon-email.svg" alt="Email" class="contact-icon">
+                            <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual email -->
-                                <strong>info@frevonto.com</strong><br>
+                                <a href="mailto:info@frevonto.com" class="contact-link">
+                                    <strong>info@frevonto.com</strong>
+                                </a><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -498,7 +607,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
-                <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
+               
             </div>
         </div>
     </footer>

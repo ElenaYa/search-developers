@@ -26,7 +26,6 @@ const WebTalentApp = {
         this.initSmoothScroll();
         
         this.initialized = true;
-        console.log('WebTalent App initialized');
     }
 };
 
@@ -124,15 +123,7 @@ WebTalentApp.handleScroll = function() {
         }
     }
     
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-    if (hero && scrollY < window.innerHeight) {
-        const parallaxElements = hero.querySelectorAll('.hero-visual');
-        parallaxElements.forEach(el => {
-            const speed = 0.5;
-            el.style.transform = `translateY(${scrollY * speed}px)`;
-        });
-    }
+    
     
     // Update active navigation link
     this.updateActiveNavLink();
@@ -349,7 +340,6 @@ WebTalentApp.applyCookieConsent = function(consent) {
         this.loadFunctional();
     }
     
-    console.log('Cookie consent applied:', consent);
 };
 
 WebTalentApp.hideCookieBanner = function() {
@@ -365,19 +355,16 @@ WebTalentApp.hideCookieBanner = function() {
 // Load analytics scripts (placeholder)
 WebTalentApp.loadAnalytics = function() {
     // Google Analytics would be loaded here
-    console.log('Analytics cookies enabled');
 };
 
 // Load marketing scripts (placeholder)
 WebTalentApp.loadMarketing = function() {
     // Marketing pixels would be loaded here
-    console.log('Marketing cookies enabled');
 };
 
 // Load functional scripts (placeholder)
 WebTalentApp.loadFunctional = function() {
     // Chat widgets, etc. would be loaded here
-    console.log('Functional cookies enabled');
 };
 
 // ===== FORMS HANDLING =====
@@ -959,7 +946,6 @@ WebTalentApp.resetContactForm = function() {
 // ===== CHAT FUNCTIONALITY =====
 WebTalentApp.openChat = function() {
     // This would integrate with a chat service
-    console.log('Opening chat...');
     alert('Чат временно недоступен. Пожалуйста, воспользуйтесь формой обратной связи.');
 };
 
@@ -969,18 +955,14 @@ window.resetContactForm = WebTalentApp.resetContactForm.bind(WebTalentApp);
 
 // Simple mobile menu toggle function
 window.toggleMobileMenu = function() {
-    console.log('toggleMobileMenu called!');
     const burger = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.nav');
     
     if (burger && nav) {
-        console.log('Elements found, toggling...');
         nav.classList.toggle('open');
         burger.classList.toggle('is-open');
         document.body.classList.toggle('no-scroll', nav.classList.contains('open'));
-        console.log('Nav open:', nav.classList.contains('open'));
     } else {
-        console.log('Elements not found!', {burger, nav});
     }
 };
 
