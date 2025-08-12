@@ -24,6 +24,7 @@ const WebTalentApp = {
         this.initJobFilters();
         this.initPageNavigation();
         this.initSmoothScroll();
+        this.initFAQ();
         
         this.initialized = true;
     }

@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -228,7 +229,7 @@
                     <div class="job-card" data-role="designer" data-employment="fulltime,parttime,project" data-salary="middle">
                         <div class="job-header">
                             <div class="job-icon">
-                                <img src="/img/icon-designer.svg" alt="UI/UX Designer">
+                                <i class="fa-solid fa-palette fa-2xl" aria-hidden="true"></i>
                             </div>
                             <div class="job-title-group">
                                 <h3 class="job-title">UI/UX Дизайнер</h3>
@@ -274,7 +275,7 @@
                         </div>
                         <div class="job-actions">
                             <button class="btn btn-primary job-apply-btn" data-job="designer">Откликнуться</button>
-                            <button class="job-bookmark"><img src="/img/icon-bookmark.svg" alt="Сохранить"></button>
+                           
                         </div>
                     </div>
 
@@ -282,7 +283,7 @@
                     <div class="job-card" data-role="frontend" data-employment="fulltime,parttime,project" data-salary="middle,senior">
                         <div class="job-header">
                             <div class="job-icon">
-                                <img src="/img/icon-frontend.svg" alt="Frontend Developer">
+                                <i class="fa-solid fa-code fa-2xl" aria-hidden="true"></i>
                             </div>
                             <div class="job-title-group">
                                 <h3 class="job-title">Frontend разработчик</h3>
@@ -328,7 +329,7 @@
                         </div>
                         <div class="job-actions">
                             <button class="btn btn-primary job-apply-btn" data-job="frontend">Откликнуться</button>
-                            <button class="job-bookmark"><img src="/img/icon-bookmark.svg" alt="Сохранить"></button>
+                           
                         </div>
                     </div>
 
@@ -336,7 +337,7 @@
                     <div class="job-card" data-role="php" data-employment="fulltime,parttime,project" data-salary="middle,senior">
                         <div class="job-header">
                             <div class="job-icon">
-                                <img src="/img/icon-php.svg" alt="PHP Developer">
+                                <i class="fa-brands fa-php fa-2xl" aria-hidden="true"></i>
                             </div>
                             <div class="job-title-group">
                                 <h3 class="job-title">PHP разработчик</h3>
@@ -382,7 +383,7 @@
                         </div>
                         <div class="job-actions">
                             <button class="btn btn-primary job-apply-btn" data-job="php">Откликнуться</button>
-                            <button class="job-bookmark"><img src="/img/icon-bookmark.svg" alt="Сохранить"></button>
+                           
                         </div>
                     </div>
 
@@ -390,7 +391,7 @@
                     <div class="job-card" data-role="qa" data-employment="fulltime,parttime,project" data-salary="junior,middle">
                         <div class="job-header">
                             <div class="job-icon">
-                                <img src="/img/icon-qa.svg" alt="QA Engineer">
+                                <i class="fa-solid fa-clipboard-check fa-2xl" aria-hidden="true"></i>
                             </div>
                             <div class="job-title-group">
                                 <h3 class="job-title">QA инженер</h3>
@@ -436,7 +437,7 @@
                         </div>
                         <div class="job-actions">
                             <button class="btn btn-primary job-apply-btn" data-job="qa">Откликнуться</button>
-                            <button class="job-bookmark"><img src="/img/icon-bookmark.svg" alt="Сохранить"></button>
+                           
                         </div>
                     </div>
 
@@ -444,7 +445,7 @@
                     <div class="job-card" data-role="pm" data-employment="fulltime,parttime" data-salary="senior">
                         <div class="job-header">
                             <div class="job-icon">
-                                <img src="/img/icon-pm.svg" alt="Project Manager">
+                                <i class="fa-solid fa-diagram-project fa-2xl" aria-hidden="true"></i>
                             </div>
                             <div class="job-title-group">
                                 <h3 class="job-title">Project Manager</h3>
@@ -489,7 +490,7 @@
                         </div>
                         <div class="job-actions">
                             <button class="btn btn-primary job-apply-btn" data-job="pm">Откликнуться</button>
-                            <button class="job-bookmark"><img src="/img/icon-bookmark.svg" alt="Сохранить"></button>
+                           
                         </div>
                     </div>
                 </div>
@@ -722,15 +723,18 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
+        <section class="cta-banner">
             <div class="container">
-                <div class="cta-content center">
-                    <h2 class="cta-title">Готовы начать?</h2>
-                    <p class="cta-description">Свяжитесь с нами, и мы подберем идеальное решение для вашего проекта</p>
+                <div class="cta-content">
+                    <h2 class="cta-title reveal" data-animate="true"><span class="underline">Готовы начать проект?</span></h2>
+                    <p class="cta-description">Расскажите о ваших потребностях, и мы подберем идеальную команду специалистов</p>
                     <div class="cta-actions">
                         <a href="contacts.php" class="btn btn-primary btn-large">Обсудить проект</a>
-                        <a href="about.php" class="btn btn-secondary btn-large">Узнать больше</a>
+                        <a href="offers.php" class="btn btn-secondary btn-large">Посмотреть вакансии</a>
                     </div>
+                </div>
+                <div class="cta-visual">
+                    <img src="img/cta-illustration.jpg" alt="Начать проект" class="cta-image">
                 </div>
             </div>
         </section>

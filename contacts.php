@@ -146,17 +146,17 @@
     </div>
     <header class="header">
         <div class="container">
-            <div class="header-content">
+            <div class="header-content" style="padding-left: 0; padding-right: 0;">
                 <div class="logo">
                     <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                     <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
-                    <a href="index.php" class="nav-link">Главная</a>
+                    <a href="index.php" class="nav-link active">Главная</a>
                     <a href="about.php" class="nav-link">О нас</a>
                     <a href="offers.php" class="nav-link">Что ищем/предлагаем</a>
-                    <a href="contacts.php" class="nav-link active">Контакты</a>
-               
+                    <a href="contacts.php" class="nav-link">Контакты</a>
+                  
                 </nav>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -166,7 +166,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <!-- Page Header -->
         <section class="contacts-header">
@@ -273,22 +272,7 @@
                                 <small>Поддерживаются файлы: PDF, DOC, DOCX, TXT (до 10 МБ)</small>
                             </div>
                             
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="consent" required>
-                                    <span class="checkmark"></span>
-                                    Согласен с <a href="privacy.php" target="_blank">политикой конфиденциальности</a> и обработкой персональных данных *
-                                </label>
-                                <span class="error-message"></span>
-                            </div>
-                            
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="newsletter">
-                                    <span class="checkmark"></span>
-                                    Хочу получать новости о вакансиях и услугах
-                                </label>
-                            </div>
+
                             
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary btn-large">
@@ -465,48 +449,6 @@
                         </div>
                         <div class="faq-answer">
                             <p>Конечно! Мы всегда рады личным встречам с клиентами. Рекомендуем предварительно согласовать время встречи по телефону или email, чтобы гарантировать присутствие нужных специалистов.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Alternative Contact Methods -->
-        <section class="alt-contact">
-            <div class="container">
-                <div class="alt-contact-content">
-                    <div class="alt-method">
-                        <div class="alt-icon">
-                            <img src="img/icon-calendar.svg" alt="Запланировать встречу">
-                        </div>
-                        <div class="alt-content">
-                            <h3>Запланировать встречу</h3>
-                            <p>Забронируйте удобное время для видеозвонка или личной встречи</p>
-                            <!-- TODO: Add actual calendar booking link -->
-                            <a href="#" class="btn btn-secondary">Выбрать время</a>
-                        </div>
-                    </div>
-                    
-                    <div class="alt-method">
-                        <div class="alt-icon">
-                            <img src="img/icon-chat.svg" alt="Онлайн чат">
-                        </div>
-                        <div class="alt-content">
-                            <h3>Онлайн чат</h3>
-                            <p>Задайте вопрос в реальном времени нашей службе поддержки</p>
-                            <button class="btn btn-secondary" onclick="openChat()">Начать чат</button>
-                        </div>
-                    </div>
-                    
-                    <div class="alt-method">
-                        <div class="alt-icon">
-                            <img src="img/icon-document.svg" alt="Техническое задание">
-                        </div>
-                        <div class="alt-content">
-                            <h3>Техническое задание</h3>
-                            <p>Загрузите готовое ТЗ или заполните нашу анкету для проекта</p>
-                            <!-- TODO: Add actual file upload or form link -->
-                            <a href="#" class="btn btn-secondary">Загрузить ТЗ</a>
                         </div>
                     </div>
                 </div>
