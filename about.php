@@ -6,8 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас | WebTalent Est - Поиск IT-специалистов в Эстонии</title>
-    <meta name="description" content="Узнайте больше о WebTalent Est - нашей команде, ценностях и подходе к поиску IT-талантов в Эстонии.">
+    <title>О нас | Frevonto — Поиск IT‑специалистов в Эстонии</title>
+    <meta name="description" content="Узнайте больше о Frevonto — нашей команде, ценностях и подходе к поиску IT‑талантов в Эстонии.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/about">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/about">
+    <meta property="og:title" content="О нас | Frevonto">
+    <meta property="og:description" content="Узнайте больше о Frevonto — нашей команде, ценностях и подходе к поиску IT‑талантов в Эстонии.">
+    <meta property="og:image" content="https://frevonto.com/img/about-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="О нас | Frevonto">
+    <meta name="twitter:description" content="Узнайте больше о Frevonto — нашей команде, ценностях и подходе к поиску IT‑талантов в Эстонии.">
+    <meta name="twitter:image" content="https://frevonto.com/img/about-hero.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +30,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Главная</a>
@@ -54,7 +66,7 @@
                     <p class="page-description">Мы объединяем талантливых IT-специалистов с амбициозными проектами, создавая успешные веб-решения в Эстонии</p>
                 </div>
                 <div class="page-header-visual">
-                    <img src="img/about-hero.jpg" alt="Команда WebTalent Est" class="page-header-image">
+                    <img src="img/about-hero.jpg" alt="Команда Frevonto" class="page-header-image">
                 </div>
             </div>
         </section>
@@ -416,8 +428,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
@@ -480,7 +492,7 @@
                                 <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@[your-domain].eu</strong><br>
+                                <strong>hello@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -488,7 +500,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>

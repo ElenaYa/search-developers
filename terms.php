@@ -6,8 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Условия использования | WebTalent Est</title>
-    <meta name="description" content="Условия использования сайта и услуг WebTalent Est. Права и обязанности пользователей и компании при сотрудничестве.">
+    <title>Условия использования | Frevonto</title>
+    <meta name="description" content="Условия использования сайта и услуг Frevonto. Права и обязанности пользователей и компании при сотрудничестве.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/terms">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/terms">
+    <meta property="og:title" content="Условия использования | Frevonto">
+    <meta property="og:description" content="Условия использования сайта и услуг Frevonto.">
+    <meta property="og:image" content="https://frevonto.com/img/hero-main.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Условия использования | Frevonto">
+    <meta name="twitter:description" content="Условия использования сайта и услуг Frevonto.">
+    <meta name="twitter:image" content="https://frevonto.com/img/hero-main.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +30,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Главная</a>
@@ -72,7 +84,7 @@
                             <h2>1. Общие положения</h2>
                             
                             <h3>1.1 Применимость условий</h3>
-                            <p>Настоящие Условия использования (далее "Условия") регулируют ваше использование веб-сайта и услуг WebTalent Est (далее "Компания", "мы", "наш").</p>
+                            <p>Настоящие Условия использования (далее "Условия") регулируют ваше использование веб-сайта и услуг Frevonto (далее "Компания", "мы", "наш").</p>
                             
                             <p>Используя наш веб-сайт или услуги, вы соглашаетесь соблюдать данные Условия. Если вы не согласны с какой-либо частью этих условий, не используйте наши услуги.</p>
 
@@ -101,13 +113,13 @@
                             
                             <div class="info-box">
                                 <h4>Контактные данные</h4>
-                                <p><strong>WebTalent Est</strong><br>
+                                <p><strong>Frevonto</strong><br>
                                 <!-- TODO: Replace with actual registration number -->
                                 Регистрационный номер: [COMPANY_REG_NUMBER]<br>
                                 <!-- TODO: Replace with actual address -->
                                 Адрес: [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia<br>
                                 <!-- TODO: Replace with actual email -->
-                                Email: legal@[your-domain].eu</p>
+                                Email: legal@frevonto.com</p>
                             </div>
                         </section>
 
@@ -402,7 +414,7 @@
                             <div class="contact-details">
                                 <p>По вопросам, связанным с данными Условиями, обращайтесь:</p>
                                 <!-- TODO: Replace with actual contacts -->
-                                <p><strong>Email:</strong> legal@[your-domain].eu<br>
+                                <p><strong>Email:</strong> legal@frevonto.com<br>
                                 <strong>Телефон:</strong> +372 6xx xxxx<br>
                                 <strong>Почтовый адрес:</strong> [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
                             </div>
@@ -427,8 +439,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                     </div>
@@ -458,7 +470,7 @@
                             <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@[your-domain].eu</strong><br>
+                                <strong>hello@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -466,7 +478,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>

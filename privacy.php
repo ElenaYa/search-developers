@@ -6,8 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности | WebTalent Est</title>
-    <meta name="description" content="Политика конфиденциальности WebTalent Est. Узнайте, как мы обрабатываем и защищаем ваши персональные данные в соответствии с GDPR.">
+    <title>Политика конфиденциальности | Frevonto</title>
+    <meta name="description" content="Политика конфиденциальности Frevonto. Узнайте, как мы обрабатываем и защищаем ваши персональные данные в соответствии с GDPR.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/privacy">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/privacy">
+    <meta property="og:title" content="Политика конфиденциальности | Frevonto">
+    <meta property="og:description" content="Как Frevonto обрабатывает и защищает персональные данные в соответствии с GDPR.">
+    <meta property="og:image" content="https://frevonto.com/img/hero-main.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Политика конфиденциальности | Frevonto">
+    <meta name="twitter:description" content="Как Frevonto обрабатывает и защищает персональные данные в соответствии с GDPR.">
+    <meta name="twitter:image" content="https://frevonto.com/img/hero-main.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +30,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Главная</a>
@@ -69,19 +81,19 @@
                     <div class="legal-sections">
                         <section id="overview" class="legal-section">
                             <h2>1. Обзор политики конфиденциальности</h2>
-                            <p>WebTalent Est (далее "мы", "наша компания") серьезно относится к защите персональных данных наших пользователей. Данная политика конфиденциальности объясняет, как мы собираем, используем, храним и защищаем информацию, которую вы предоставляете при использовании нашего веб-сайта и услуг.</p>
+                            <p>Frevonto (далее "мы", "наша компания") серьезно относится к защите персональных данных наших пользователей. Данная политика конфиденциальности объясняет, как мы собираем, используем, храним и защищаем информацию, которую вы предоставляете при использовании нашего веб-сайта и услуг.</p>
                             
                             <p>Мы соблюдаем требования Общего регламента по защите данных (GDPR) Европейского союза и законодательства Эстонии в области защиты персональных данных.</p>
                             
                             <div class="info-box">
                                 <h3>Контролер данных</h3>
-                                <p><strong>WebTalent Est</strong><br>
+                                <p><strong>Frevonto</strong><br>
                                 <!-- TODO: Replace with actual address -->
                                 Адрес: [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia<br>
                                 <!-- TODO: Replace with actual registration number -->
                                 Регистрационный номер: [COMPANY_REG_NUMBER]<br>
                                 <!-- TODO: Replace with actual email -->
-                                Email: privacy@[your-domain].eu</p>
+                                Email: privacy@frevonto.com</p>
                             </div>
                         </section>
 
@@ -249,7 +261,7 @@
                                 <h3>Как реализовать свои права</h3>
                                 <p>Для реализации ваших прав свяжитесь с нами по адресу:</p>
                                 <!-- TODO: Replace with actual email -->
-                                <p><strong>Email:</strong> privacy@[your-domain].eu</p>
+                                <p><strong>Email:</strong> privacy@frevonto.com</p>
                                 <p>Мы рассмотрим ваш запрос в течение 30 дней.</p>
                             </div>
                         </section>
@@ -260,12 +272,12 @@
                             <h3>7.1 Наши контакты</h3>
                             <div class="contact-details">
                                 <p><strong>Ответственный за защиту данных:</strong></p>
-                                <p>WebTalent Est<br>
+                                <p>Frevonto<br>
                                 <!-- TODO: Replace with actual address -->
                                 [ADDRESS_PLACEHOLDER]<br>
                                 Tallinn, 101xx, Estonia<br>
                                 <!-- TODO: Replace with actual email -->
-                                Email: privacy@[your-domain].eu<br>
+                                Email: privacy@frevonto.com<br>
                                 <!-- TODO: Replace with actual phone -->
                                 Телефон: +372 6xx xxxx</p>
                             </div>
@@ -318,8 +330,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                     </div>
@@ -349,7 +361,7 @@
                             <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@[your-domain].eu</strong><br>
+                                <strong>hello@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -357,7 +369,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>

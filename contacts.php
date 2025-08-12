@@ -7,8 +7,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты | WebTalent Est - Свяжитесь с нами</title>
-    <meta name="description" content="Свяжитесь с WebTalent Est для обсуждения вашего проекта или вакансии. Офис в Таллине, Эстония. Быстрый отклик в течение 24 часов.">
+    <title>Контакты | Frevonto — Свяжитесь с нами</title>
+    <meta name="description" content="Свяжитесь с Frevonto для обсуждения вашего проекта или вакансии. Офис в Таллине, Эстония. Быстрый отклик в течение 24 часов.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/contacts">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/contacts">
+    <meta property="og:title" content="Контакты | Frevonto">
+    <meta property="og:description" content="Свяжитесь с Frevonto для обсуждения вашего проекта или вакансии. Быстрый отклик в течение 24 часов.">
+    <meta property="og:image" content="https://frevonto.com/img/contact-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Контакты | Frevonto">
+    <meta name="twitter:description" content="Свяжитесь с Frevonto для обсуждения вашего проекта или вакансии. Быстрый отклик в течение 24 часов.">
+    <meta name="twitter:image" content="https://frevonto.com/img/contact-hero.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -19,8 +31,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Главная</a>
@@ -71,14 +83,14 @@
                                 </div>
                                 <div class="quick-content">
                                     <!-- TODO: Replace with actual email -->
-                                    <strong>hello@[your-domain].eu</strong>
+                                    <strong>hello@frevonto.com</strong>
                                     <p>Ответим в течение 24 часов</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="contacts-header-visual">
-                        <img src="img/contact-hero.jpg" alt="Наш офис в Таллине" class="contacts-header-image">
+                        <img src="img/contact-hero.jpg" alt="Офис Frevonto в Таллине" class="contacts-header-image">
                         <div class="contacts-accent"></div>
                     </div>
                 </div>
@@ -226,7 +238,7 @@
                                     <div class="detail-content">
                                         <h4>Email</h4>
                                         <!-- TODO: Replace with actual email -->
-                                        <p><strong>hello@[your-domain].eu</strong><br>
+                                        <p><strong>hello@frevonto.com</strong><br>
                                         Ответим в течение 24 часов</p>
                                     </div>
                                 </div>
@@ -289,7 +301,7 @@
                         <div class="map-overlay">
                             <div class="map-pin">
                                 <img src="img/icon-map-pin.svg" alt="Наше местоположение">
-                                <span>WebTalent Est</span>
+                                <span>Frevonto</span>
                             </div>
                         </div>
                     </div>
@@ -430,8 +442,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
@@ -494,7 +506,7 @@
                             <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@[your-domain].eu</strong><br>
+                                <strong>hello@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -502,7 +514,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>

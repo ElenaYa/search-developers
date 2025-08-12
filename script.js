@@ -1,5 +1,5 @@
 /**
- * WebTalent Est - Main JavaScript
+ * Frevonto - Main JavaScript
  * Handles all interactive functionality including animations, forms, and cookies
  */
 

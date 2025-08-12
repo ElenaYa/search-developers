@@ -6,8 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebTalent Est | Поиск IT-специалистов в Эстонии</title>
-    <meta name="description" content="Найдем лучших веб-разработчиков, дизайнеров и QA специалистов для вашего проекта в Эстонии. Профессиональные дизайн-пакеты от €450.">
+    <title>Frevonto — Поиск IT‑специалистов в Эстонии</title>
+    <meta name="description" content="Найдем лучших веб‑разработчиков, дизайнеров и QA специалистов для вашего проекта в Эстонии. Профессиональные дизайн‑пакеты от €450.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/">
+    <meta property="og:title" content="Frevonto — Поиск IT‑специалистов в Эстонии">
+    <meta property="og:description" content="Найдем лучших веб‑разработчиков, дизайнеров и QA специалистов для вашего проекта в Эстонии. Профессиональные дизайн‑пакеты от €450.">
+    <meta property="og:image" content="https://frevonto.com/img/hero-main.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frevonto — Поиск IT‑специалистов в Эстонии">
+    <meta name="twitter:description" content="Найдем лучших веб‑разработчиков, дизайнеров и QA специалистов для вашего проекта в Эстонии. Профессиональные дизайн‑пакеты от €450.">
+    <meta name="twitter:image" content="https://frevonto.com/img/hero-main.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +30,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link active">Главная</a>
@@ -399,8 +411,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
@@ -463,7 +475,7 @@
                             <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@[your-domain].eu</strong><br>
+                                <strong>hello@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -471,11 +483,29 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>
     </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Frevonto",
+      "url": "https://frevonto.com/",
+      "logo": "https://frevonto.com/img/logo.svg",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hello@frevonto.com",
+        "telephone": "+372 6xx xxxx",
+        "areaServed": "EE",
+        "availableLanguage": ["ru", "en"]
+      }]
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>

@@ -6,8 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Что ищем и предлагаем | WebTalent Est - Вакансии и Дизайн-услуги</title>
-    <meta name="description" content="Вакансии для IT-специалистов в Эстонии и профессиональные дизайн-пакеты для бизнеса. Конкурентные ставки и интересные проекты.">
+    <title>Что ищем и предлагаем | Frevonto — Вакансии и дизайн‑услуги</title>
+    <meta name="description" content="Вакансии для IT‑специалистов в Эстонии и профессиональные дизайн‑пакеты для бизнеса. Конкурентные ставки и интересные проекты.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/offers">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/offers">
+    <meta property="og:title" content="Что ищем и предлагаем | Frevonto">
+    <meta property="og:description" content="Вакансии для IT‑специалистов в Эстонии и дизайн‑пакеты для бизнеса.">
+    <meta property="og:image" content="https://frevonto.com/img/team-collaboration.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Что ищем и предлагаем | Frevonto">
+    <meta name="twitter:description" content="Вакансии для IT‑специалистов и дизайн‑пакеты для бизнеса.">
+    <meta name="twitter:image" content="https://frevonto.com/img/team-collaboration.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +30,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Главная</a>
@@ -735,8 +747,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
@@ -799,7 +811,7 @@
                             <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@[your-domain].eu</strong><br>
+                                <strong>hello@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -807,7 +819,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>

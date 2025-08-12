@@ -6,8 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDPR - Защита персональных данных | WebTalent Est</title>
-    <meta name="description" content="Информация о защите персональных данных в соответствии с GDPR. Права субъектов данных, процедуры запросов и контакты DPO.">
+    <title>GDPR — Защита персональных данных | Frevonto</title>
+    <meta name="description" content="Информация о защите персональных данных в соответствии с GDPR. Права субъектов данных, процедуры запросов и контакты DPO компании Frevonto.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://frevonto.com/gdpr">
+    <meta property="og:site_name" content="Frevonto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frevonto.com/gdpr">
+    <meta property="og:title" content="GDPR — Защита персональных данных | Frevonto">
+    <meta property="og:description" content="Права субъектов данных и процедуры запросов GDPR в Frevonto.">
+    <meta property="og:image" content="https://frevonto.com/img/hero-main.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GDPR — Защита персональных данных | Frevonto">
+    <meta name="twitter:description" content="Права субъектов данных и процедуры запросов GDPR в Frevonto.">
+    <meta name="twitter:image" content="https://frevonto.com/img/hero-main.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +30,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                    <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
                     <a href="index.php" class="nav-link">Главная</a>
@@ -80,12 +92,12 @@
                             
                             <div class="controller-info">
                                 <div class="controller-card">
-                                    <h3>WebTalent Est</h3>
+                                    <h3>Frevonto</h3>
                                     <div class="controller-details">
                                         <!-- TODO: Replace with actual information -->
                                         <p><strong>Регистрационный номер:</strong> [COMPANY_REG_NUMBER]</p>
                                         <p><strong>Юридический адрес:</strong> [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
-                                        <p><strong>Email:</strong> privacy@[your-domain].eu</p>
+                                         <p><strong>Email:</strong> privacy@frevonto.com</p>
                                         <p><strong>Телефон:</strong> +372 6xx xxxx</p>
                                         <p><strong>Представитель в ЕС:</strong> Да (Эстония)</p>
                                     </div>
@@ -98,7 +110,7 @@
                             <div class="dpo-info">
                                 <!-- TODO: Replace with actual DPO information -->
                                 <p><strong>Имя:</strong> [DPO_NAME]<br>
-                                <strong>Email:</strong> dpo@[your-domain].eu<br>
+                                <strong>Email:</strong> dpo@frevonto.com<br>
                                 <strong>Телефон:</strong> +372 6xx xxxx<br>
                                 <strong>Почтовый адрес:</strong> [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
                             </div>
@@ -443,13 +455,13 @@
                             <div class="request-methods">
                                 <div class="request-method">
                                     <h4>📧 По электронной почте</h4>
-                                    <p><strong>Адрес:</strong> dpo@[your-domain].eu</p>
+                                    <p><strong>Адрес:</strong> dpo@frevonto.com</p>
                                     <p><strong>Тема:</strong> "GDPR Request - [тип запроса]"</p>
                                 </div>
 
                                 <div class="request-method">
                                     <h4>📮 Почтовым письмом</h4>
-                                    <p><strong>Адрес:</strong> WebTalent Est, GDPR Requests<br>
+                                    <p><strong>Адрес:</strong> Frevonto, GDPR Requests<br>
                                     [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
                                 </div>
 
@@ -539,7 +551,7 @@
                             <p>Если вы не удовлетворены тем, как мы обработали ваш запрос или обрабатываем ваши данные, сначала свяжитесь с нами:</p>
                             
                             <div class="complaint-contact">
-                                <p><strong>Email:</strong> complaints@[your-domain].eu<br>
+                                <p><strong>Email:</strong> complaints@frevonto.com<br>
                                 <strong>Тема:</strong> "GDPR Complaint"<br>
                                 <strong>Срок рассмотрения:</strong> 14 рабочих дней</p>
                             </div>
@@ -580,7 +592,7 @@
                                         <!-- TODO: Replace with actual DPO information -->
                                         <p><strong>Имя:</strong> [DPO_NAME]<br>
                                         <strong>Должность:</strong> Data Protection Officer<br>
-                                        <strong>Email:</strong> dpo@[your-domain].eu<br>
+                                        <strong>Email:</strong> dpo@frevonto.com<br>
                                         <strong>Прямой телефон:</strong> +372 6xx xxxx<br>
                                         <strong>Часы работы:</strong> Пн-Пт: 9:00-17:00 EET</p>
                                     </div>
@@ -720,8 +732,8 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
-                            <span class="logo-text">WebTalent<span class="accent">Est</span></span>
+                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                     </div>
@@ -743,7 +755,7 @@
                             <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>dpo@[your-domain].eu</strong><br>
+                                <strong>dpo@frevonto.com</strong><br>
                                 Вопросы по защите данных
                             </div>
                         </div>
@@ -751,7 +763,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> WebTalent Est. Все права защищены.</p>
+                <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
                 <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
             </div>
         </div>
