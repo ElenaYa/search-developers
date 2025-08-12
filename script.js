@@ -44,6 +44,38 @@ WebTalentApp.setupEventListeners = function() {
     window.addEventListener('scroll', this.throttle(this.handleScroll.bind(this), 16));
     window.addEventListener('resize', this.throttle(this.handleResize.bind(this), 100));
     window.addEventListener('load', this.handleWindowLoad.bind(this));
+
+    // Mobile menu toggle
+    const burger = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('.nav');
+    
+    if (burger && nav) {
+        burger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            nav.classList.toggle('open');
+            burger.classList.toggle('is-open');
+            document.body.classList.toggle('no-scroll', nav.classList.contains('open'));
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!burger.contains(e.target) && !nav.contains(e.target) && nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                burger.classList.remove('is-open');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+        
+        // Close menu on resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024 && nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                burger.classList.remove('is-open');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    }
 };
 
 // ===== SCROLL ANIMATIONS =====
@@ -934,6 +966,23 @@ WebTalentApp.openChat = function() {
 // Make openChat available globally for onclick handlers
 window.openChat = WebTalentApp.openChat.bind(WebTalentApp);
 window.resetContactForm = WebTalentApp.resetContactForm.bind(WebTalentApp);
+
+// Simple mobile menu toggle function
+window.toggleMobileMenu = function() {
+    console.log('toggleMobileMenu called!');
+    const burger = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('.nav');
+    
+    if (burger && nav) {
+        console.log('Elements found, toggling...');
+        nav.classList.toggle('open');
+        burger.classList.toggle('is-open');
+        document.body.classList.toggle('no-scroll', nav.classList.contains('open'));
+        console.log('Nav open:', nav.classList.contains('open'));
+    } else {
+        console.log('Elements not found!', {burger, nav});
+    }
+};
 
 // ===== INITIALIZATION =====
 // Auto-initialize when script loads

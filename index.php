@@ -1,5 +1,4 @@
 <?php
-// TODO: Replace placeholders with actual company information
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -24,13 +23,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-content">
+            <div class="header-content" style="padding-left: 0; padding-right: 0;">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                    <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                     <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
@@ -48,7 +50,7 @@
                         </div>
                     </div>
                 </nav>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -58,12 +60,11 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1 class="hero-title">Находим <span class="gradient-text">лучших IT-специалистов</span> для вашего проекта</h1>
+                        <h1 class="hero-title reveal" data-animate="true"><span class="underline">Находим <span class="gradient-text">лучших IT-специалистов</span> для вашего проекта</span></h1>
                         <p class="hero-description">Собираем команды веб-разработчиков, дизайнеров и QA-инженеров в Эстонии. Быстро, качественно, с гарантией результата.</p>
                         <div class="hero-cta">
                             <a href="offers.php#jobs" class="btn btn-primary">Откликнуться на вакансию</a>
@@ -92,32 +93,38 @@
             </div>
         </section>
 
-        <!-- Who We're Looking For -->
+        <section class="about-long">
+            <div class="container">
+                <div class="about-long-content">
+                    <h2 class="about-long-title reveal" data-animate="true"><span class="underline">Почему Frevonto</span></h2>
+                    <p class="about-long-text">
+                        Мы соединяем бизнес-задачи с правильными людьми и технологиями. Наша команда глубоко погружается в контекст, чтобы предложить реалистичные сроки, выверенный стек и понятные процессы. Мы открыто говорим о стоимости и рисках, используем практики CI/CD, пишем поддерживаемый код и аккуратно передаем знание. В работе опираемся на принципы прозрачности, измеримости и постоянного улучшения. Такой подход помогает быстрее достигать ощутимых результатов, сохраняя гибкость и качество на каждом этапе — от гипотез и дизайна до внедрения и поддержки.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section class="specialists">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Кого ищем</h2>
+                    <h2 class="section-title reveal" data-animate="true"><span class="underline">Кого ищем</span></h2>
                     <p class="section-subtitle">Талантливых специалистов для амбициозных проектов</p>
                 </div>
                 <div class="specialists-grid">
                     <div class="specialist-card" data-animate="slide-up">
-                        <div class="specialist-icon">
-                            <img src="img/icon-designer.svg" alt="Дизайнер">
-                        </div>
-                        <h3 class="specialist-title">UI/UX Дизайнеры</h3>
+                        <div class="specialist-icon"><i class="fa-solid fa-palette fa-2xl" aria-hidden="true"></i></div>
+                        <h3 class="specialist-title reveal" data-animate="true"><span class="underline">UI/UX Дизайнеры</span></h3>
                         <p class="specialist-description">Создание современных интерфейсов и пользовательских сценариев</p>
                         <div class="specialist-types">
                             <span class="badge">Full-time</span>
                             <span class="badge">Part-time</span>
                             <span class="badge">Проектно</span>
                         </div>
-                        <div class="specialist-range">€18-45/час</div>
+                        <div class="specialist-range">€18-40/час</div>
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="100">
-                        <div class="specialist-icon">
-                            <img src="img/icon-frontend.svg" alt="Верстальщик">
-                        </div>
-                        <h3 class="specialist-title">Frontend разработчики</h3>
+                        <div class="specialist-icon"><i class="fa-solid fa-code fa-2xl" aria-hidden="true"></i></div>
+                        <h3 class="specialist-title reveal" data-animate="true"><span class="underline">Frontend разработчики</span></h3>
                         <p class="specialist-description">HTML5, CSS3, JavaScript, адаптивная верстка</p>
                         <div class="specialist-types">
                             <span class="badge">Full-time</span>
@@ -127,10 +134,8 @@
                         <div class="specialist-range">€22-50/час</div>
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="200">
-                        <div class="specialist-icon">
-                            <img src="img/icon-php.svg" alt="PHP разработчик">
-                        </div>
-                        <h3 class="specialist-title">PHP разработчики</h3>
+                        <div class="specialist-icon"><i class="fa-brands fa-php fa-2xl" aria-hidden="true"></i></div>
+                        <h3 class="specialist-title reveal" data-animate="true"><span class="underline">PHP разработчики</span></h3>
                         <p class="specialist-description">Backend разработка, API, работа с базами данных</p>
                         <div class="specialist-types">
                             <span class="badge">Full-time</span>
@@ -140,64 +145,64 @@
                         <div class="specialist-range">€25-55/час</div>
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="300">
-                        <div class="specialist-icon">
-                            <img src="img/icon-qa.svg" alt="QA специалист">
-                        </div>
-                        <h3 class="specialist-title">QA инженеры</h3>
+                        <div class="specialist-icon"><i class="fa-solid fa-clipboard-check fa-2xl" aria-hidden="true"></i></div>
+                        <h3 class="specialist-title reveal" data-animate="true"><span class="underline">QA инженеры</span></h3>
                         <p class="specialist-description">Тестирование, автоматизация, контроль качества</p>
                         <div class="specialist-types">
                             <span class="badge">Full-time</span>
                             <span class="badge">Part-time</span>
                             <span class="badge">Проjectно</span>
                         </div>
-                        <div class="specialist-range">€20-42/час</div>
+                        <div class="specialist-range">€18-40/час</div>
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="400">
-                        <div class="specialist-icon">
-                            <img src="img/icon-pm.svg" alt="Project Manager">
-                        </div>
-                        <h3 class="specialist-title">Project Manager</h3>
+                        <div class="specialist-icon"><i class="fa-solid fa-diagram-project fa-2xl" aria-hidden="true"></i></div>
+                        <h3 class="specialist-title reveal" data-animate="true"><span class="underline">Project Manager</span></h3>
                         <p class="specialist-description">Управление проектами, планирование, координация команд</p>
                         <div class="specialist-types">
                             <span class="badge">Full-time</span>
                             <span class="badge">Part-time</span>
                             <span class="badge">Консультации</span>
                         </div>
-                        <div class="specialist-range">€28-60/час</div>
+                        <div class="specialist-range">€28-55/час</div>
+                    </div>
+                    <div class="specialist-card" data-animate="slide-up" data-delay="500">
+                        <div class="specialist-icon"><i class="fa-solid fa-gears fa-2xl" aria-hidden="true"></i></div>
+                        <h3 class="specialist-title reveal" data-animate="true"><span class="underline">DevOps инженеры</span></h3>
+                        <p class="specialist-description">CI/CD, контейнеризация, инфраструктура как код, мониторинг</p>
+                        <div class="specialist-types">
+                            <span class="badge">Full-time</span>
+                            <span class="badge">Part-time</span>
+                            <span class="badge">Проектно</span>
+                        </div>
+                        <div class="specialist-range">€30-65/час</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- What We Offer -->
         <section class="offers">
             <div class="container">
                 <div class="offers-content">
                     <div class="offers-text">
-                        <h2 class="section-title">Что предлагаем</h2>
+                        <h2 class="section-title reveal" data-animate="true"><span class="underline">Что предлагаем</span></h2>
                         <div class="offers-list">
                             <div class="offer-item">
-                                <div class="offer-icon">
-                                    <img src="img/icon-salary.svg" alt="Зарплата">
-                                </div>
+                                <div class="offer-icon"><i class="fa-solid fa-euro-sign fa-xl" aria-hidden="true"></i></div>
                                 <div class="offer-content">
                                     <h3>Конкурентные ставки</h3>
                                     <p>Диапазоны от €18 до €60/час в зависимости от опыта и роли</p>
                                 </div>
                             </div>
                             <div class="offer-item">
-                                <div class="offer-icon">
-                                    <img src="img/icon-process.svg" alt="Процессы">
-                                </div>
+                                <div class="offer-icon"><i class="fa-solid fa-sitemap fa-xl" aria-hidden="true"></i></div>
                                 <div class="offer-content">
                                     <h3>Четкие процессы</h3>
                                     <p>Структурированная работа с техническими заданиями и регулярным фидбеком</p>
                                 </div>
                             </div>
                             <div class="offer-item">
-                                <div class="offer-icon">
-                                    <img src="img/icon-transparency.svg" alt="Прозрачность">
-                                </div>
+                                <div class="offer-icon"><i class="fa-regular fa-eye fa-xl" aria-hidden="true"></i></div>
                                 <div class="offer-content">
                                     <h3>Прозрачные задачи</h3>
                                     <p>Детальные брифы, понятные критерии приемки, отсутствие размытых требований</p>
@@ -212,11 +217,10 @@
             </div>
         </section>
 
-        <!-- How We Work -->
         <section class="workflow">
             <div class="container">
                 <div class="section-header center">
-                    <h2 class="section-title">Как работаем</h2>
+                    <h2 class="section-title reveal" data-animate="true"><span class="underline">Как работаем</span></h2>
                     <p class="section-subtitle">Простой и эффективный процесс от первого контакта до результата</p>
                 </div>
                 <div class="workflow-steps">
@@ -252,11 +256,10 @@
             </div>
         </section>
 
-        <!-- Portfolio Cases -->
         <section class="portfolio">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Портфолио кейсов</h2>
+                    <h2 class="section-title reveal" data-animate="true"><span class="underline">Портфолио кейсов</span></h2>
                     <p class="section-subtitle">Примеры успешных проектов наших специалистов</p>
                 </div>
                 <div class="portfolio-grid">
@@ -312,86 +315,48 @@
             </div>
         </section>
 
-        <!-- Technologies -->
         <section class="technologies">
             <div class="container">
                 <div class="section-header center">
-                    <h2 class="section-title">Технологии и инструменты</h2>
+                    <h2 class="section-title reveal" data-animate="true"><span class="underline">Технологии и инструменты</span></h2>
                     <p class="section-subtitle">Современный стек для эффективной разработки</p>
                 </div>
                 <div class="tech-categories">
                     <div class="tech-category">
                         <h3 class="tech-category-title">Frontend</h3>
                         <div class="tech-icons">
-                            <div class="tech-icon">
-                                <img src="img/tech-html5.svg" alt="HTML5">
-                                <span>HTML5</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-css3.svg" alt="CSS3">
-                                <span>CSS3</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-js.svg" alt="JavaScript">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-icon">
-                                            <img src="img/tech-react.svg" alt="React">
-                                <span>React</span>
-                            </div>
+                            <div class="tech-icon"><i class="fa-brands fa-html5 fa-2xl" aria-hidden="true"></i><span>HTML5</span></div>
+                            <div class="tech-icon"><i class="fa-brands fa-css3-alt fa-2xl" aria-hidden="true"></i><span>CSS3</span></div>
+                            <div class="tech-icon"><i class="fa-brands fa-js fa-2xl" aria-hidden="true"></i><span>JavaScript</span></div>
+                            <div class="tech-icon"><i class="fa-brands fa-react fa-2xl" aria-hidden="true"></i><span>React</span></div>
                         </div>
                     </div>
                     <div class="tech-category">
                         <h3 class="tech-category-title">Backend</h3>
                         <div class="tech-icons">
-                            <div class="tech-icon">
-                                <img src="img/tech-php.svg" alt="PHP">
-                                <span>PHP</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-laravel.svg" alt="Laravel">
-                                <span>Laravel</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-mysql.svg" alt="MySQL">
-                                <span>MySQL</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-nodejs.svg" alt="Node.js">
-                                <span>Node.js</span>
-                            </div>
+                            <div class="tech-icon"><i class="fa-brands fa-php fa-2xl" aria-hidden="true"></i><span>PHP</span></div>
+                            <div class="tech-icon"><i class="fa-brands fa-laravel fa-2xl" aria-hidden="true"></i><span>Laravel</span></div>
+                            <div class="tech-icon"><i class="fa-solid fa-database fa-2xl" aria-hidden="true"></i><span>MySQL</span></div>
+                            <div class="tech-icon"><i class="fa-brands fa-node-js fa-2xl" aria-hidden="true"></i><span>Node.js</span></div>
                         </div>
                     </div>
                     <div class="tech-category">
                         <h3 class="tech-category-title">Design & Testing</h3>
                         <div class="tech-icons">
-                            <div class="tech-icon">
-                                <img src="img/tech-figma.svg" alt="Figma">
-                                <span>Figma</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-photoshop.svg" alt="Photoshop">
-                                <span>Photoshop</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-cypress.svg" alt="Cypress">
-                                <span>Cypress</span>
-                            </div>
-                            <div class="tech-icon">
-                                <img src="img/tech-postman.svg" alt="Postman">
-                                <span>Postman</span>
-                            </div>
+                            <div class="tech-icon"><i class="fa-brands fa-figma fa-2xl" aria-hidden="true"></i><span>Figma</span></div>
+                            <div class="tech-icon"><i class="fa-solid fa-file-image fa-2xl" aria-hidden="true"></i><span>Photoshop</span></div>
+                            <div class="tech-icon"><i class="fa-solid fa-vial-circle-check fa-2xl" aria-hidden="true"></i><span>Cypress</span></div>
+                            <div class="tech-icon"><i class="fa-solid fa-envelope-open-text fa-2xl" aria-hidden="true"></i><span>Postman</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Banner -->
         <section class="cta-banner">
             <div class="container">
                 <div class="cta-content">
-                    <h2 class="cta-title">Готовы начать проект?</h2>
+                    <h2 class="cta-title reveal" data-animate="true"><span class="underline">Готовы начать проект?</span></h2>
                     <p class="cta-description">Расскажите о ваших потребностях, и мы подберем идеальную команду специалистов</p>
                     <div class="cta-actions">
                         <a href="contacts.php" class="btn btn-primary btn-large">Обсудить проект</a>
@@ -399,7 +364,7 @@
                     </div>
                 </div>
                 <div class="cta-visual">
-                    <img src="img/cta-illustration.svg" alt="Начать проект" class="cta-image">
+                    <img src="img/cta-illustration.jpg" alt="Начать проект" class="cta-image">
                 </div>
             </div>
         </section>
@@ -411,16 +376,11 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                            <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
-                        <div class="footer-social">
-                            <!-- TODO: Add actual social media links -->
-                            <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
-                            <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
-                            <a href="#" class="social-link"><img src="img/social-telegram.svg" alt="Telegram"></a>
-                        </div>
+                      
                     </div>
                     <div class="footer-nav">
                         <div class="footer-column">
@@ -456,26 +416,29 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                                    <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
+                            <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual address -->
-                                <strong>[ADDRESS_PLACEHOLDER]</strong><br>
-                                Tallinn, 101xx, Estonia
+                                <a href="https://maps.google.com/?q=Tartu+mnt+25,+10117+Tallinn,+Estonia" target="_blank" rel="noopener" class="contact-link">
+                                    <strong>Tartu mnt 25</strong><br>
+                                    10117 Tallinn, Estonia
+                                </a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual phone -->
-                                <strong>+372 6xx xxxx</strong><br>
+                                <a href="tel:+37255549123" class="contact-link">
+                                    <strong>+372 5554 9123</strong>
+                                </a><br>
                                 Пн-Пт: 9:00-18:00 EET
                             </div>
                         </div>
                         <div class="contact-item">
                             <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual email -->
-                                <strong>hello@frevonto.com</strong><br>
+                                <a href="mailto:info@frevonto.com" class="contact-link">
+                                    <strong>info@frevonto.com</strong>
+                                </a><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
@@ -484,7 +447,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Frevonto. Все права защищены.</p>
-                <p>Регистрационный код: <!-- TODO: Add company registration number -->[COMPANY_REG_NUMBER]</p>
+               
             </div>
         </div>
     </footer>
@@ -495,12 +458,12 @@
       "@type": "Organization",
       "name": "Frevonto",
       "url": "https://frevonto.com/",
-      "logo": "https://frevonto.com/img/logo.svg",
+      "logo": "https://frevonto.com/img/logo.jpg",
       "contactPoint": [{
         "@type": "ContactPoint",
         "contactType": "customer support",
-        "email": "hello@frevonto.com",
-        "telephone": "+372 6xx xxxx",
+        "email": "info@frevonto.com",
+        "telephone": "+372 5554 9123",
         "areaServed": "EE",
         "availableLanguage": ["ru", "en"]
       }]

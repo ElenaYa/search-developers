@@ -24,13 +24,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                     <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
@@ -48,7 +50,7 @@
                         </div>
                     </div>
                 </nav>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -89,7 +91,7 @@
                                 <h3>Контролер данных</h3>
                                 <p><strong>Frevonto</strong><br>
                                 <!-- TODO: Replace with actual address -->
-                                Адрес: [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia<br>
+                                Адрес: Tartu mnt 25, 10117 Tallinn, Estonia<br>
                                 <!-- TODO: Replace with actual registration number -->
                                 Регистрационный номер: [COMPANY_REG_NUMBER]<br>
                                 <!-- TODO: Replace with actual email -->
@@ -274,12 +276,12 @@
                                 <p><strong>Ответственный за защиту данных:</strong></p>
                                 <p>Frevonto<br>
                                 <!-- TODO: Replace with actual address -->
-                                [ADDRESS_PLACEHOLDER]<br>
-                                Tallinn, 101xx, Estonia<br>
+                                Tartu mnt 25<br>
+                                10117 Tallinn, Estonia<br>
                                 <!-- TODO: Replace with actual email -->
                                 Email: privacy@frevonto.com<br>
                                 <!-- TODO: Replace with actual phone -->
-                                Телефон: +372 6xx xxxx</p>
+                                Телефон: +372 5554 9123</p>
                             </div>
 
                             <h3>7.2 Подача жалобы</h3>
@@ -330,7 +332,7 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
@@ -350,18 +352,18 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="/img/icon-location.svg" alt="Адрес" class="contact-icon">
+                            <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual address -->
-                                <strong>[ADDRESS_PLACEHOLDER]</strong><br>
-                                Tallinn, 101xx, Estonia
+                                <strong>Tartu mnt 25</strong><br>
+                                10117 Tallinn, Estonia
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
+                            <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@frevonto.com</strong><br>
+                                <strong>info@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>

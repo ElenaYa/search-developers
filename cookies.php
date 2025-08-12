@@ -24,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
     <!-- Cookie Consent Banner -->
@@ -146,7 +148,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                     <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
@@ -164,7 +166,7 @@
                         </div>
                     </div>
                 </nav>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -219,7 +221,7 @@
                             <div class="usage-grid">
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="/img/icon-security.svg" alt="Безопасность">
+                                        <img src="img/icon-security.svg" alt="Безопасность">
                                     </div>
                                     <h3>Безопасность</h3>
                                     <p>Защита от мошенничества и обеспечение безопасности пользователей</p>
@@ -227,7 +229,7 @@
                                 
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="/img/icon-performance.svg" alt="Производительность">
+                                        <img src="img/icon-performance.svg" alt="Производительность">
                                     </div>
                                     <h3>Производительность</h3>
                                     <p>Оптимизация загрузки страниц и улучшение работы сайта</p>
@@ -235,7 +237,7 @@
                                 
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="/img/icon-personalization.svg" alt="Персонализация">
+                                        <img src="img/icon-personalization.svg" alt="Персонализация">
                                     </div>
                                     <h3>Персонализация</h3>
                                     <p>Сохранение ваших предпочтений и настроек</p>
@@ -243,7 +245,7 @@
                                 
                                 <div class="usage-item">
                                     <div class="usage-icon">
-                                        <img src="/img/icon-analytics.svg" alt="Аналитика">
+                                        <img src="img/icon-analytics.svg" alt="Аналитика">
                                     </div>
                                     <h3>Аналитика</h3>
                                     <p>Понимание того, как посетители используют наш сайт</p>
@@ -394,7 +396,7 @@
                             <div class="third-party-services">
                                 <div class="service-card">
                                     <div class="service-header">
-                                        <img src="/img/service-google-analytics.svg" alt="Google Analytics" class="service-logo">
+                                        <img src="img/service-google-analytics.svg" alt="Google Analytics" class="service-logo">
                                         <div class="service-info">
                                             <h3>Google Analytics</h3>
                                             <span class="service-type">Аналитика</span>
@@ -406,7 +408,7 @@
                                 
                                 <div class="service-card">
                                     <div class="service-header">
-                                        <img src="/img/service-facebook.svg" alt="Facebook" class="service-logo">
+                                        <img src="img/service-facebook.svg" alt="Facebook" class="service-logo">
                                         <div class="service-info">
                                             <h3>Facebook Pixel</h3>
                                             <span class="service-type">Реклама</span>
@@ -418,7 +420,7 @@
                                 
                                 <div class="service-card">
                                     <div class="service-header">
-                                        <img src="/img/service-linkedin.svg" alt="LinkedIn" class="service-logo">
+                                        <img src="img/service-linkedin.svg" alt="LinkedIn" class="service-logo">
                                         <div class="service-info">
                                             <h3>LinkedIn Insight Tag</h3>
                                             <span class="service-type">Реклама</span>
@@ -445,7 +447,7 @@
                             <div class="browser-instructions">
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="/img/browser-chrome.svg" alt="Chrome">
+                                        <img src="img/browser-chrome.svg" alt="Chrome">
                                         Google Chrome
                                     </summary>
                                     <div class="browser-steps">
@@ -460,7 +462,7 @@
                                 
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="/img/browser-firefox.svg" alt="Firefox">
+                                        <img src="img/browser-firefox.svg" alt="Firefox">
                                         Mozilla Firefox
                                     </summary>
                                     <div class="browser-steps">
@@ -474,7 +476,7 @@
                                 
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="/img/browser-safari.svg" alt="Safari">
+                                        <img src="img/browser-safari.svg" alt="Safari">
                                         Safari
                                     </summary>
                                     <div class="browser-steps">
@@ -488,7 +490,7 @@
                                 
                                 <details class="browser-detail">
                                     <summary class="browser-name">
-                                        <img src="/img/browser-edge.svg" alt="Edge">
+                                        <img src="img/browser-edge.svg" alt="Edge">
                                         Microsoft Edge
                                     </summary>
                                     <div class="browser-steps">
@@ -524,10 +526,8 @@
                             <div class="contact-details">
                                 <!-- TODO: Replace with actual email -->
                                 <p><strong>Email:</strong> privacy@frevonto.com<br>
-                                <!-- TODO: Replace with actual phone -->
-                                <strong>Телефон:</strong> +372 6xx xxxx<br>
-                                <!-- TODO: Replace with actual address -->
-                                <strong>Адрес:</strong> [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
+                                <strong>Телефон:</strong> +372 5554 9123<br>
+                                <strong>Адрес:</strong> Tartu mnt 25, 10117 Tallinn, Estonia</p>
                             </div>
                         </section>
                     </div>
@@ -550,7 +550,7 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
@@ -570,10 +570,10 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
+                            <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
-                                <strong>hello@frevonto.com</strong><br>
+                                <strong>info@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>

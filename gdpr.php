@@ -24,13 +24,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                    <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                     <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
@@ -48,7 +50,7 @@
                         </div>
                     </div>
                 </nav>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -96,9 +98,9 @@
                                     <div class="controller-details">
                                         <!-- TODO: Replace with actual information -->
                                         <p><strong>Регистрационный номер:</strong> [COMPANY_REG_NUMBER]</p>
-                                        <p><strong>Юридический адрес:</strong> [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
+                                         <p><strong>Юридический адрес:</strong> Tartu mnt 25, 10117 Tallinn, Estonia</p>
                                          <p><strong>Email:</strong> privacy@frevonto.com</p>
-                                        <p><strong>Телефон:</strong> +372 6xx xxxx</p>
+                                         <p><strong>Телефон:</strong> +372 5554 9123</p>
                                         <p><strong>Представитель в ЕС:</strong> Да (Эстония)</p>
                                     </div>
                                 </div>
@@ -111,8 +113,8 @@
                                 <!-- TODO: Replace with actual DPO information -->
                                 <p><strong>Имя:</strong> [DPO_NAME]<br>
                                 <strong>Email:</strong> dpo@frevonto.com<br>
-                                <strong>Телефон:</strong> +372 6xx xxxx<br>
-                                <strong>Почтовый адрес:</strong> [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
+                                <strong>Телефон:</strong> +372 5554 9123<br>
+                                <strong>Почтовый адрес:</strong> Tartu mnt 25, 10117 Tallinn, Estonia</p>
                             </div>
                         </section>
 
@@ -123,7 +125,7 @@
                             <div class="rights-detailed">
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-info.svg" alt="Право на информацию">
+                                        <img src="img/icon-info.svg" alt="Право на информацию">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на информацию</h3>
@@ -143,7 +145,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-access.svg" alt="Право на доступ">
+                                        <img src="img/icon-access.svg" alt="Право на доступ">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на доступ (статья 15)</h3>
@@ -164,7 +166,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-rectify.svg" alt="Право на исправление">
+                                        <img src="img/icon-rectify.svg" alt="Право на исправление">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на исправление (статья 16)</h3>
@@ -183,7 +185,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-erase.svg" alt="Право на удаление">
+                                        <img src="img/icon-erase.svg" alt="Право на удаление">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на удаление / "Право быть забытым" (статья 17)</h3>
@@ -205,7 +207,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-restrict.svg" alt="Право на ограничение">
+                                        <img src="img/icon-restrict.svg" alt="Право на ограничение">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на ограничение обработки (статья 18)</h3>
@@ -224,7 +226,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-portability.svg" alt="Право на переносимость">
+                                        <img src="img/icon-portability.svg" alt="Право на переносимость">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на переносимость данных (статья 20)</h3>
@@ -244,7 +246,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-object.svg" alt="Право на возражение">
+                                        <img src="img/icon-object.svg" alt="Право на возражение">
                                     </div>
                                     <div class="right-content">
                                         <h3>Право на возражение (статья 21)</h3>
@@ -262,7 +264,7 @@
 
                                 <div class="right-detailed">
                                     <div class="right-icon">
-                                        <img src="/img/icon-withdraw.svg" alt="Отзыв согласия">
+                                        <img src="img/icon-withdraw.svg" alt="Отзыв согласия">
                                     </div>
                                     <div class="right-content">
                                         <h3>Отзыв согласия</h3>
@@ -462,7 +464,7 @@
                                 <div class="request-method">
                                     <h4>📮 Почтовым письмом</h4>
                                     <p><strong>Адрес:</strong> Frevonto, GDPR Requests<br>
-                                    [ADDRESS_PLACEHOLDER], Tallinn, 101xx, Estonia</p>
+                                    Tartu mnt 25, 10117 Tallinn, Estonia</p>
                                 </div>
 
                                 <div class="request-method">
@@ -593,7 +595,7 @@
                                         <p><strong>Имя:</strong> [DPO_NAME]<br>
                                         <strong>Должность:</strong> Data Protection Officer<br>
                                         <strong>Email:</strong> dpo@frevonto.com<br>
-                                        <strong>Прямой телефон:</strong> +372 6xx xxxx<br>
+                                        <strong>Прямой телефон:</strong> +372 5554 9123<br>
                                         <strong>Часы работы:</strong> Пн-Пт: 9:00-17:00 EET</p>
                                     </div>
                                 </div>
@@ -732,7 +734,7 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="Frevonto" class="logo-img">
+                            <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
@@ -752,7 +754,7 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
+                            <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
                                 <strong>dpo@frevonto.com</strong><br>

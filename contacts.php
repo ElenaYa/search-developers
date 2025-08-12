@@ -25,13 +25,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                    <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                     <span class="logo-text">Frevon<span class="accent">to</span></span>
                 </div>
                 <nav class="nav">
@@ -49,7 +51,7 @@
                         </div>
                     </div>
                 </nav>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -73,7 +75,7 @@
                                 </div>
                                 <div class="quick-content">
                                     <!-- TODO: Replace with actual phone -->
-                                    <strong>+372 6xx xxxx</strong>
+                                    <strong>+372 5554 9123</strong>
                                     <p>Звоните в рабочие часы</p>
                                 </div>
                             </div>
@@ -82,8 +84,7 @@
                                     <img src="img/icon-email.svg" alt="Email">
                                 </div>
                                 <div class="quick-content">
-                                    <!-- TODO: Replace with actual email -->
-                                    <strong>hello@frevonto.com</strong>
+                                    <strong>info@frevonto.com</strong>
                                     <p>Ответим в течение 24 часов</p>
                                 </div>
                             </div>
@@ -214,8 +215,8 @@
                                     <div class="detail-content">
                                         <h4>Адрес офиса</h4>
                                         <!-- TODO: Replace with actual address -->
-                                        <p><strong>[ADDRESS_PLACEHOLDER]</strong><br>
-                                        Tallinn, 101xx, Estonia</p>
+                                        <p><strong>Tartu mnt 25</strong><br>
+                                        10117 Tallinn, Estonia</p>
                                     </div>
                                 </div>
                                 
@@ -226,7 +227,7 @@
                                     <div class="detail-content">
                                         <h4>Телефон</h4>
                                         <!-- TODO: Replace with actual phone -->
-                                        <p><strong>+372 6xx xxxx</strong><br>
+                                        <p><strong>+372 5554 9123</strong><br>
                                         Пн-Пт: 9:00-18:00 EET</p>
                                     </div>
                                 </div>
@@ -237,8 +238,7 @@
                                     </div>
                                     <div class="detail-content">
                                         <h4>Email</h4>
-                                        <!-- TODO: Replace with actual email -->
-                                        <p><strong>hello@frevonto.com</strong><br>
+                                        <p><strong>info@frevonto.com</strong><br>
                                         Ответим в течение 24 часов</p>
                                     </div>
                                 </div>
@@ -442,16 +442,11 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="Frevonto" class="logo-img">
+                            <img src="img/logo.jpg" alt="Frevonto" class="logo-img">
                             <span class="logo-text">Frevon<span class="accent">to</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
-                        <div class="footer-social">
-                            <!-- TODO: Add actual social media links -->
-                            <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
-                            <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
-                            <a href="#" class="social-link"><img src="img/social-telegram.svg" alt="Telegram"></a>
-                        </div>
+                     
                     </div>
                     <div class="footer-nav">
                         <div class="footer-column">
@@ -490,23 +485,22 @@
                             <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual address -->
-                                <strong>[ADDRESS_PLACEHOLDER]</strong><br>
-                                Tallinn, 101xx, Estonia
+                                <strong>Tartu mnt 25</strong><br>
+                                10117 Tallinn, Estonia
                             </div>
                         </div>
                         <div class="contact-item">
                             <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual phone -->
-                                <strong>+372 6xx xxxx</strong><br>
+                                <strong>+372 5554 9123</strong><br>
                                 Пн-Пт: 9:00-18:00 EET
                             </div>
                         </div>
                         <div class="contact-item">
                             <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
-                                <!-- TODO: Replace with actual email -->
-                                <strong>hello@frevonto.com</strong><br>
+                                <strong>info@frevonto.com</strong><br>
                                 Ответим в течение 24 часов
                             </div>
                         </div>
