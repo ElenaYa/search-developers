@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
@@ -43,7 +42,6 @@
         </div>
     </div>
 
-    <!-- Cookie Settings Modal -->
     <div id="cookie-settings-modal" class="modal cookie-modal">
         <div class="modal-content">
             <div class="modal-header">

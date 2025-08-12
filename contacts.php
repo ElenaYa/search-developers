@@ -29,7 +29,6 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
@@ -44,7 +43,6 @@
         </div>
     </div>
 
-    <!-- Cookie Settings Modal -->
     <div id="cookie-settings-modal" class="modal cookie-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -167,7 +165,6 @@
         </div>
     </header>
     <main>
-        <!-- Page Header -->
         <section class="contacts-header">
             <div class="container">
                 <div class="contacts-header-content">
@@ -180,7 +177,6 @@
                                     <img src="img/icon-phone.svg" alt="Телефон">
                                 </div>
                                 <div class="quick-content">
-                                    <!-- TODO: Replace with actual phone -->
                                     <strong><a href="tel:+37255549123">+372 5554 9123</a></strong>
                                     <p>Звоните в рабочие часы</p>
                                 </div>
@@ -204,11 +200,9 @@
             </div>
         </section>
 
-        <!-- Contact Form & Info -->
         <section class="contact-section">
             <div class="container">
                 <div class="contact-content">
-                    <!-- Contact Form -->
                     <div class="contact-form-wrapper">
                         <div class="form-header">
                             <h2 class="form-title">Напишите нам</h2>
@@ -283,7 +277,6 @@
                             </div>
                         </form>
                         
-                        <!-- Form Success Message -->
                         <div class="form-success" id="form-success">
                             <div class="success-icon">
                                 <img src="img/icon-success.svg" alt="Успешно">
@@ -294,7 +287,6 @@
                         </div>
                     </div>
                     
-                    <!-- Contact Information -->
                     <div class="contact-info-wrapper">
                         <div class="contact-info-card">
                             <h3 class="info-title">Контактная информация</h3>
@@ -305,7 +297,7 @@
                                     </div>
                                     <div class="detail-content">
                                         <h4>Адрес офиса</h4>
-                                        <!-- TODO: Replace with actual address -->
+                                       
                                         <p><a href="https://maps.google.com/?q=Tartu+mnt+25,+10117+Tallinn,+Estonia" target="_blank" rel="noopener" class="contact-link"><strong>Tartu mnt 25</strong><br>
                                         10117 Tallinn, Estonia</a></p>
                                     </div>
@@ -317,7 +309,7 @@
                                     </div>
                                     <div class="detail-content">
                                         <h4>Телефон</h4>
-                                        <!-- TODO: Replace with actual phone -->
+                                       
                                         <p><a href="tel:+37255549123" class="contact-link"><strong>+372 5554 9123</strong></a><br>
                                         Пн-Пт: 9:00-18:00 EET</p>
                                     </div>
@@ -359,7 +351,6 @@
             </div>
         </section>
 
-        <!-- Map Section -->
         <section class="map-section">
             <div class="container">
                 <div class="map-header">
@@ -367,7 +358,7 @@
                     <p class="section-subtitle">Наш офис находится в центре Таллина, рядом с деловым районом</p>
                 </div>
                 <div class="map-wrapper">
-                    <!-- TODO: Replace with actual map embed or interactive map -->
+                    
                     <div class="map-placeholder">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.973370849346!2d24.760451877119202!3d59.43351867466487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935f6bf6a8c1%3A0x47bb17d1fd6a6622!2sTartu%20mnt%2025%2C%2010117%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2sua!4v1755016230632!5m2!1sen!2sua"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -384,7 +375,6 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container">
                 <div class="section-header center">

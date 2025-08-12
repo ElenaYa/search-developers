@@ -29,7 +29,6 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
@@ -44,7 +43,6 @@
         </div>
     </div>
 
-    <!-- Cookie Settings Modal -->
     <div id="cookie-settings-modal" class="modal cookie-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -168,7 +166,6 @@
     </header>
 
     <main>
-        <!-- Page Navigation -->
         <section class="page-nav">
             <div class="container">
                 <div class="page-nav-content">
@@ -181,7 +178,6 @@
             </div>
         </section>
 
-        <!-- Jobs Section -->
         <section id="jobs" class="jobs-section active-section">
             <div class="container">
                 <div class="section-header">
@@ -189,7 +185,6 @@
                     <p class="section-subtitle">Присоединяйтесь к команде профессионалов и работайте над интересными проектами</p>
                 </div>
 
-                <!-- Job Filters -->
                 <div class="job-filters">
                     <div class="filter-group">
                         <label for="role-filter">Роль:</label>
@@ -223,9 +218,7 @@
                     <button class="filter-reset">Сбросить фильтры</button>
                 </div>
 
-                <!-- Job Cards -->
                 <div class="jobs-grid">
-                    <!-- UI/UX Designer -->
                     <div class="job-card" data-role="designer" data-employment="fulltime,parttime,project" data-salary="middle">
                         <div class="job-header">
                             <div class="job-icon">
@@ -279,7 +272,6 @@
                         </div>
                     </div>
 
-                    <!-- Frontend Developer -->
                     <div class="job-card" data-role="frontend" data-employment="fulltime,parttime,project" data-salary="middle,senior">
                         <div class="job-header">
                             <div class="job-icon">
@@ -333,7 +325,6 @@
                         </div>
                     </div>
 
-                    <!-- PHP Developer -->
                     <div class="job-card" data-role="php" data-employment="fulltime,parttime,project" data-salary="middle,senior">
                         <div class="job-header">
                             <div class="job-icon">
@@ -387,7 +378,6 @@
                         </div>
                     </div>
 
-                    <!-- QA Engineer -->
                     <div class="job-card" data-role="qa" data-employment="fulltime,parttime,project" data-salary="junior,middle">
                         <div class="job-header">
                             <div class="job-icon">
@@ -441,7 +431,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Manager -->
                     <div class="job-card" data-role="pm" data-employment="fulltime,parttime" data-salary="senior">
                         <div class="job-header">
                             <div class="job-icon">
@@ -497,7 +486,6 @@
             </div>
         </section>
 
-        <!-- Design Services Section -->
         <section id="design" class="design-section">
             <div class="container">
                 <div class="section-header">
@@ -505,9 +493,7 @@
                     <p class="section-subtitle">Профессиональные веб-дизайн решения с фиксированной стоимостью и гарантированными сроками</p>
                 </div>
 
-                <!-- Design Packages -->
                 <div class="design-packages">
-                    <!-- Lite Package -->
                     <div class="design-package" data-animate="slide-up">
                         <div class="package-header">
                             <div class="package-badge">Популярный</div>
@@ -550,7 +536,6 @@
                         </div>
                     </div>
 
-                    <!-- Pro Package -->
                     <div class="design-package featured" data-animate="slide-up" data-delay="100">
                         <div class="package-header">
                             <div class="package-badge accent">Рекомендуем</div>
@@ -594,7 +579,6 @@
                         </div>
                     </div>
 
-                    <!-- Custom Package -->
                     <div class="design-package" data-animate="slide-up" data-delay="200">
                         <div class="package-header">
                             <div class="package-badge">Enterprise</div>
@@ -639,7 +623,6 @@
                     </div>
                 </div>
 
-                <!-- Design Examples -->
                 <div class="design-examples">
                     <h3 class="examples-title">Примеры наших работ</h3>
                     <div class="examples-grid">
@@ -673,7 +656,6 @@
                     </div>
                 </div>
 
-                <!-- Design Process -->
                 <div id="design-process" class="design-process">
                     <h3 class="process-title">Этапы дизайн-проекта</h3>
                     <div class="process-steps">
@@ -722,7 +704,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="cta-banner">
             <div class="container">
                 <div class="cta-content">
@@ -740,7 +721,6 @@
         </section>
     </main>
 
-    <!-- Job Application Modal -->
     <div id="job-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -791,7 +771,6 @@
         </div>
     </div>
 
-    <!-- Package Order Modal -->
     <div id="package-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">

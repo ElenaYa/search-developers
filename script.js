@@ -1,18 +1,13 @@
-/**
- * Frevonto - Main JavaScript
- * Handles all interactive functionality including animations, forms, and cookies
- */
+
 
 'use strict';
 
-// Global app state
 const WebTalentApp = {
     initialized: false,
     animations: new Map(),
     cookieConsent: null,
     activeModals: new Set(),
     
-    // Initialize the application
     init() {
         if (this.initialized) return;
         
@@ -30,22 +25,17 @@ const WebTalentApp = {
     }
 };
 
-// ===== EVENT LISTENERS SETUP =====
 WebTalentApp.setupEventListeners = function() {
-    // Wait for DOM to be ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => this.init());
     } else {
-        // DOM is already ready
         setTimeout(() => this.init(), 0);
     }
     
-    // Handle window events
     window.addEventListener('scroll', this.throttle(this.handleScroll.bind(this), 16));
     window.addEventListener('resize', this.throttle(this.handleResize.bind(this), 100));
     window.addEventListener('load', this.handleWindowLoad.bind(this));
 
-    // Mobile menu toggle
     const burger = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.nav');
     
@@ -58,7 +48,6 @@ WebTalentApp.setupEventListeners = function() {
             document.body.classList.toggle('no-scroll', nav.classList.contains('open'));
         });
         
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!burger.contains(e.target) && !nav.contains(e.target) && nav.classList.contains('open')) {
                 nav.classList.remove('open');
@@ -67,7 +56,6 @@ WebTalentApp.setupEventListeners = function() {
             }
         });
         
-        // Close menu on resize to desktop
         window.addEventListener('resize', () => {
             if (window.innerWidth > 1024 && nav.classList.contains('open')) {
                 nav.classList.remove('open');
@@ -77,15 +65,12 @@ WebTalentApp.setupEventListeners = function() {
         });
     }
 
-    // Initialize FAQ functionality
     this.initFAQ();
 };
 
-// ===== SCROLL ANIMATIONS =====
 WebTalentApp.initAnimations = function() {
     const animatedElements = document.querySelectorAll('[data-animate]');
     
-    // Create intersection observer for animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -111,12 +96,10 @@ WebTalentApp.initAnimations = function() {
     });
 };
 
-// ===== SCROLL HANDLING =====
 WebTalentApp.handleScroll = function() {
     const scrollY = window.scrollY;
     const header = document.querySelector('.header');
     
-    // Header background blur effect
     if (header) {
         if (scrollY > 50) {
             header.style.background = 'rgba(17, 19, 25, 0.9)';
@@ -128,12 +111,9 @@ WebTalentApp.handleScroll = function() {
     }
     
     
-    
-    // Update active navigation link
-    this.updateActiveNavLink();
+        this.updateActiveNavLink();
 };
 
-// Update active navigation link based on scroll position
 WebTalentApp.updateActiveNavLink = function() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link[href*="#"]');
@@ -158,42 +138,33 @@ WebTalentApp.updateActiveNavLink = function() {
     });
 };
 
-// ===== RESIZE HANDLING =====
 WebTalentApp.handleResize = function() {
-    // Close mobile menu on desktop
     if (window.innerWidth > 768) {
         this.closeMobileMenu();
     }
     
-    // Recalculate any layout-dependent animations
     this.recalculateAnimations();
 };
 
 WebTalentApp.handleWindowLoad = function() {
-    // Hide loading spinner if exists
     const loader = document.querySelector('.loader');
     if (loader) {
         loader.style.opacity = '0';
         setTimeout(() => loader.remove(), 300);
     }
     
-    // Start counter animations
     this.startCounterAnimations();
 };
 
-// ===== COOKIE CONSENT BANNER =====
 WebTalentApp.initCookies = function() {
     this.cookieConsent = this.getCookieConsent();
     
-    // Show banner if no consent given
     if (!this.cookieConsent) {
         this.showCookieBanner();
     } else {
-        // Apply existing consent
         this.applyCookieConsent(this.cookieConsent);
     }
     
-    // Setup cookie banner event listeners
     this.setupCookieEventListeners();
 };
 
@@ -202,12 +173,11 @@ WebTalentApp.showCookieBanner = function() {
     if (banner) {
         setTimeout(() => {
             banner.classList.add('show');
-        }, 1000); // Show after 1 second
+        }, 1000); 
     }
 };
 
 WebTalentApp.setupCookieEventListeners = function() {
-    // Accept all cookies
     const acceptAllBtn = document.querySelector('.cookie-accept-all');
     if (acceptAllBtn) {
         acceptAllBtn.addEventListener('click', () => {
@@ -222,7 +192,6 @@ WebTalentApp.setupCookieEventListeners = function() {
         });
     }
     
-    // Reject all (except necessary)
     const rejectAllBtn = document.querySelector('.cookie-reject-all');
     if (rejectAllBtn) {
         rejectAllBtn.addEventListener('click', () => {
@@ -237,7 +206,6 @@ WebTalentApp.setupCookieEventListeners = function() {
         });
     }
     
-    // Cookie settings
     const settingsBtn = document.querySelector('.cookie-settings-btn');
     const manageBtn = document.querySelector('.manage-cookies-btn');
     
@@ -249,7 +217,6 @@ WebTalentApp.setupCookieEventListeners = function() {
         }
     });
     
-    // Cookie settings modal
     this.setupCookieSettingsModal();
 };
 
@@ -257,7 +224,6 @@ WebTalentApp.setupCookieSettingsModal = function() {
     const modal = document.getElementById('cookie-settings-modal');
     if (!modal) return;
     
-    // Load current settings
     const currentConsent = this.getCookieConsent() || {
         necessary: true,
         analytics: false,
@@ -265,7 +231,6 @@ WebTalentApp.setupCookieSettingsModal = function() {
         functional: false
     };
     
-    // Set checkbox states
     Object.keys(currentConsent).forEach(category => {
         const checkbox = modal.querySelector(`[data-category="${category}"]`);
         if (checkbox) {
@@ -273,7 +238,6 @@ WebTalentApp.setupCookieSettingsModal = function() {
         }
     });
     
-    // Save settings button
     const saveBtn = modal.querySelector('.cookie-save-settings');
     if (saveBtn) {
         saveBtn.addEventListener('click', () => {
@@ -281,7 +245,6 @@ WebTalentApp.setupCookieSettingsModal = function() {
         });
     }
     
-    // Accept selected button
     const acceptBtn = modal.querySelector('.cookie-accept-selected');
     if (acceptBtn) {
         acceptBtn.addEventListener('click', () => {
@@ -309,7 +272,6 @@ WebTalentApp.saveCookieSettings = function() {
         consent[category] = checkbox.checked;
     });
     
-    // Necessary cookies are always required
     consent.necessary = true;
     
     this.setCookieConsent(consent);
@@ -329,17 +291,14 @@ WebTalentApp.setCookieConsent = function(consent) {
 };
 
 WebTalentApp.applyCookieConsent = function(consent) {
-    // Analytics cookies
     if (consent.analytics) {
         this.loadAnalytics();
     }
     
-    // Marketing cookies
     if (consent.marketing) {
         this.loadMarketing();
     }
     
-    // Functional cookies
     if (consent.functional) {
         this.loadFunctional();
     }
@@ -356,33 +315,23 @@ WebTalentApp.hideCookieBanner = function() {
     }
 };
 
-// Load analytics scripts (placeholder)
 WebTalentApp.loadAnalytics = function() {
-    // Google Analytics would be loaded here
 };
 
-// Load marketing scripts (placeholder)
 WebTalentApp.loadMarketing = function() {
-    // Marketing pixels would be loaded here
 };
 
-// Load functional scripts (placeholder)
 WebTalentApp.loadFunctional = function() {
-    // Chat widgets, etc. would be loaded here
 };
 
-// ===== FORMS HANDLING =====
 WebTalentApp.initForms = function() {
     const forms = document.querySelectorAll('form');
     
     forms.forEach(form => {
-        // Real-time validation
         this.setupFormValidation(form);
         
-        // Form submission
         form.addEventListener('submit', this.handleFormSubmit.bind(this));
         
-        // File uploads
         this.setupFileUploads(form);
     });
 };
@@ -401,13 +350,11 @@ WebTalentApp.validateField = function(field) {
     let isValid = true;
     let errorMessage = '';
     
-    // Required field validation
     if (field.hasAttribute('required') && !value) {
         isValid = false;
         errorMessage = 'Это поле обязательно для заполнения';
     }
     
-    // Email validation
     if (field.type === 'email' && value) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(value)) {
@@ -416,7 +363,6 @@ WebTalentApp.validateField = function(field) {
         }
     }
     
-    // Phone validation
     if (field.type === 'tel' && value) {
         const phoneRegex = /^\+?[\d\s\-\(\)]{10,}$/;
         if (!phoneRegex.test(value)) {
@@ -425,7 +371,6 @@ WebTalentApp.validateField = function(field) {
         }
     }
     
-    // URL validation
     if (field.type === 'url' && value) {
         try {
             new URL(value);
@@ -447,7 +392,6 @@ WebTalentApp.displayFieldError = function(field, message) {
         errorElement.style.display = message ? 'block' : 'none';
     }
     
-    // Add error styling
     if (message) {
         field.classList.add('error');
     } else {
@@ -470,7 +414,6 @@ WebTalentApp.handleFormSubmit = function(event) {
     const form = event.target;
     const submitBtn = form.querySelector('[type="submit"]');
     
-    // Validate all fields
     const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
     let isFormValid = true;
     
@@ -485,15 +428,12 @@ WebTalentApp.handleFormSubmit = function(event) {
         return;
     }
     
-    // Show loading state
     this.setFormLoading(form, true);
     
-    // Simulate form submission (replace with actual API call)
     setTimeout(() => {
         this.setFormLoading(form, false);
         this.showFormSuccess(form);
         
-        // Close modal if form is in modal
         const modal = form.closest('.modal');
         if (modal) {
             this.hideModal(modal);
@@ -521,7 +461,6 @@ WebTalentApp.setFormLoading = function(form, isLoading) {
 };
 
 WebTalentApp.showFormSuccess = function(form) {
-    // Show success message
     const successElement = document.getElementById('form-success');
     if (successElement) {
         form.style.display = 'none';
@@ -533,7 +472,6 @@ WebTalentApp.showFormSuccess = function(form) {
 };
 
 WebTalentApp.showFormError = function(form, message) {
-    // You could add a general error message display here
     alert(message);
 };
 
@@ -551,7 +489,6 @@ WebTalentApp.setupFileUploads = function(form) {
             }
         });
         
-        // Drag and drop
         if (wrapper) {
             wrapper.addEventListener('dragover', (e) => {
                 e.preventDefault();
@@ -577,25 +514,20 @@ WebTalentApp.setupFileUploads = function(form) {
     });
 };
 
-// ===== MODALS =====
 WebTalentApp.initModals = function() {
-    // Modal triggers
     document.addEventListener('click', (event) => {
-        // Job application buttons
         if (event.target.classList.contains('job-apply-btn')) {
             event.preventDefault();
             const jobTitle = event.target.dataset.job;
             this.showJobModal(jobTitle);
         }
         
-        // Package order buttons
         if (event.target.classList.contains('package-order-btn')) {
             event.preventDefault();
             const packageType = event.target.dataset.package;
             this.showPackageModal(packageType);
         }
         
-        // Modal close buttons
         if (event.target.classList.contains('modal-close') || 
             event.target.classList.contains('modal-cancel')) {
             event.preventDefault();
@@ -603,13 +535,11 @@ WebTalentApp.initModals = function() {
             this.hideModal(modal);
         }
         
-        // Click outside modal to close
         if (event.target.classList.contains('modal')) {
             this.hideModal(event.target);
         }
     });
     
-    // ESC key to close modals
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && this.activeModals.size > 0) {
             const modals = Array.from(this.activeModals);
@@ -626,7 +556,6 @@ WebTalentApp.showModal = function(modal) {
     this.activeModals.add(modal);
     document.body.style.overflow = 'hidden';
     
-    // Focus management
     const firstInput = modal.querySelector('input, textarea, select, button');
     if (firstInput) {
         setTimeout(() => firstInput.focus(), 100);
@@ -649,7 +578,6 @@ WebTalentApp.showJobModal = function(jobType) {
     const positionField = modal?.querySelector('#position');
     
     if (modal && positionField) {
-        // Set job title in form
         const jobTitles = {
             'designer': 'UI/UX Дизайнер',
             'frontend': 'Frontend разработчик',
@@ -668,7 +596,6 @@ WebTalentApp.showPackageModal = function(packageType) {
     const packageField = modal?.querySelector('#package-type');
     
     if (modal && packageField) {
-        // Set package type in form
         const packageTitles = {
             'lite': 'Lite - от €450',
             'pro': 'Pro - от €900',
@@ -680,7 +607,6 @@ WebTalentApp.showPackageModal = function(packageType) {
     }
 };
 
-// ===== JOB FILTERS =====
 WebTalentApp.initJobFilters = function() {
     const roleFilter = document.getElementById('role-filter');
     const employmentFilter = document.getElementById('employment-filter');
@@ -708,7 +634,6 @@ WebTalentApp.applyJobFilters = function() {
     jobCards.forEach(card => {
         let showCard = true;
         
-        // Role filter
         if (roleFilter !== 'all') {
             const cardRole = card.dataset.role;
             if (cardRole !== roleFilter) {
@@ -716,7 +641,6 @@ WebTalentApp.applyJobFilters = function() {
             }
         }
         
-        // Employment filter
         if (employmentFilter !== 'all' && showCard) {
             const cardEmployment = card.dataset.employment || '';
             if (!cardEmployment.includes(employmentFilter)) {
@@ -724,7 +648,6 @@ WebTalentApp.applyJobFilters = function() {
             }
         }
         
-        // Salary filter
         if (salaryFilter !== 'all' && showCard) {
             const cardSalary = card.dataset.salary || '';
             if (!cardSalary.includes(salaryFilter)) {
@@ -732,7 +655,6 @@ WebTalentApp.applyJobFilters = function() {
             }
         }
         
-        // Show/hide card with animation
         if (showCard) {
             card.style.display = 'block';
             setTimeout(() => {
@@ -762,7 +684,6 @@ WebTalentApp.resetJobFilters = function() {
     this.applyJobFilters();
 };
 
-// ===== PAGE NAVIGATION =====
 WebTalentApp.initPageNavigation = function() {
     const navLinks = document.querySelectorAll('.page-nav-links .nav-link-large');
     const sections = document.querySelectorAll('.jobs-section, .design-section');
@@ -773,11 +694,9 @@ WebTalentApp.initPageNavigation = function() {
             
             const targetSection = link.dataset.section;
             
-            // Update active link
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
             
-            // Show/hide sections
             sections.forEach(section => {
                 if (section.id === targetSection) {
                     section.classList.add('active-section');
@@ -789,7 +708,6 @@ WebTalentApp.initPageNavigation = function() {
     });
 };
 
-// ===== SMOOTH SCROLL =====
 WebTalentApp.initSmoothScroll = function() {
     const scrollLinks = document.querySelectorAll('a[href*="#"]');
     
@@ -816,7 +734,6 @@ WebTalentApp.initSmoothScroll = function() {
     });
 };
 
-// ===== COUNTER ANIMATIONS =====
 WebTalentApp.startCounterAnimations = function() {
     const counters = document.querySelectorAll('[data-count]');
     
@@ -836,7 +753,6 @@ WebTalentApp.startCounterAnimations = function() {
             }
         };
         
-        // Start animation when element is visible
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -850,7 +766,6 @@ WebTalentApp.startCounterAnimations = function() {
     });
 };
 
-// ===== FAQ TOGGLES =====
 WebTalentApp.initFAQ = function() {
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -863,7 +778,6 @@ WebTalentApp.initFAQ = function() {
             const toggleFAQ = () => {
                 const isActive = item.classList.contains('active');
                 
-                // Close all other FAQ items
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.classList.remove('active');
@@ -874,7 +788,6 @@ WebTalentApp.initFAQ = function() {
                     }
                 });
                 
-                // Toggle current item
                 if (isActive) {
                     item.classList.remove('active');
                     answer.style.maxHeight = null;
@@ -884,10 +797,8 @@ WebTalentApp.initFAQ = function() {
                 }
             };
             
-            // Add click handler to the entire question div
             question.addEventListener('click', toggleFAQ);
             
-            // Also add click handler specifically to toggle button
             if (toggle) {
                 toggle.addEventListener('click', (e) => {
                     e.stopPropagation();
@@ -898,7 +809,6 @@ WebTalentApp.initFAQ = function() {
     });
 };
 
-// ===== UTILITY FUNCTIONS =====
 WebTalentApp.throttle = function(func, limit) {
     let inThrottle;
     return function() {
@@ -929,19 +839,16 @@ WebTalentApp.debounce = function(func, wait, immediate) {
 };
 
 WebTalentApp.recalculateAnimations = function() {
-    // Recalculate any animations that depend on element positions
-    // This would be called on window resize
+  
 };
 
 WebTalentApp.closeMobileMenu = function() {
-    // Close mobile navigation if open
     const mobileMenu = document.querySelector('.mobile-menu');
     if (mobileMenu) {
         mobileMenu.classList.remove('open');
     }
 };
 
-// ===== CONTACT FORM SPECIFIC =====
 WebTalentApp.resetContactForm = function() {
     const form = document.getElementById('contact-form');
     const successMessage = document.getElementById('form-success');
@@ -953,17 +860,13 @@ WebTalentApp.resetContactForm = function() {
     }
 };
 
-// ===== CHAT FUNCTIONALITY =====
 WebTalentApp.openChat = function() {
-    // This would integrate with a chat service
     alert('Чат временно недоступен. Пожалуйста, воспользуйтесь формой обратной связи.');
 };
 
-// Make openChat available globally for onclick handlers
 window.openChat = WebTalentApp.openChat.bind(WebTalentApp);
 window.resetContactForm = WebTalentApp.resetContactForm.bind(WebTalentApp);
 
-// Simple mobile menu toggle function
 window.toggleMobileMenu = function() {
     const burger = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.nav');
@@ -976,11 +879,9 @@ window.toggleMobileMenu = function() {
     }
 };
 
-// ===== INITIALIZATION =====
-// Auto-initialize when script loads
+
 WebTalentApp.setupEventListeners();
 
-// Export for potential external use
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = WebTalentApp;
 } else {

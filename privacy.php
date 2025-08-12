@@ -28,7 +28,6 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
@@ -43,7 +42,6 @@
         </div>
     </div>
 
-    <!-- Cookie Settings Modal -->
     <div id="cookie-settings-modal" class="modal cookie-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -197,12 +195,9 @@
                             <div class="info-box">
                                 <h3>Контролер данных</h3>
                                 <p><strong>Frevonto</strong><br>
-                                <!-- TODO: Replace with actual address -->
                                 Адрес: Tartu mnt 25, 10117 Tallinn, Estonia<br>
-                                <!-- TODO: Replace with actual registration number -->
-                                Регистрационный номер: [COMPANY_REG_NUMBER]<br>
-                                <!-- TODO: Replace with actual email -->
-                                Email: privacy@frevonto.com</p>
+                              
+                                Email: info@frevonto.com</p>
                             </div>
                         </section>
 
@@ -369,8 +364,7 @@
                             <div class="rights-exercise">
                                 <h3>Как реализовать свои права</h3>
                                 <p>Для реализации ваших прав свяжитесь с нами по адресу:</p>
-                                <!-- TODO: Replace with actual email -->
-                                <p><strong>Email:</strong> privacy@frevonto.com</p>
+                                <p><strong>Email:</strong> info@frevonto.com</p>
                                 <p>Мы рассмотрим ваш запрос в течение 30 дней.</p>
                             </div>
                         </section>
@@ -382,12 +376,9 @@
                             <div class="contact-details">
                                 <p><strong>Ответственный за защиту данных:</strong></p>
                                 <p>Frevonto<br>
-                                <!-- TODO: Replace with actual address -->
                                 Tartu mnt 25<br>
                                 10117 Tallinn, Estonia<br>
-                                <!-- TODO: Replace with actual email -->
                                 Email: privacy@frevonto.com<br>
-                                <!-- TODO: Replace with actual phone -->
                                 Телефон: +372 5554 9123</p>
                             </div>
 

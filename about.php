@@ -1,5 +1,4 @@
 <?php
-// TODO: Replace placeholders with actual company information
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -23,12 +22,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
@@ -43,7 +42,6 @@
         </div>
     </div>
 
-    <!-- Cookie Settings Modal -->
     <div id="cookie-settings-modal" class="modal cookie-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -167,7 +165,6 @@
     </header>
 
     <main>
-        <!-- Page Header -->
         <section class="page-header">
             <div class="container">
                 <div class="page-header-content">
@@ -180,7 +177,6 @@
             </div>
         </section>
 
-        <!-- Company Story -->
         <section class="company-story">
             <div class="container">
                 <div class="story-content">
@@ -219,13 +215,11 @@
                     </div>
                     <div class="story-visual">
                         <img src="img/office-tallinn.jpg" alt="Офис в Таллине" class="story-image">
-                        <div class="story-accent"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Company Values -->
         <section class="values">
             <div class="container">
                 <div class="section-header center">
@@ -235,28 +229,28 @@
                 <div class="values-grid">
                     <div class="value-card" data-animate="slide-up">
                         <div class="value-icon">
-                            <img src="img/icon-quality.svg" alt="Качество">
+                            <i class="fa-solid fa-star fa-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="value-title">Качество превыше скорости</h3>
                         <p class="value-description">Мы выбираем специалистов не только по техническим навыкам, но и по способности работать в команде и создавать качественные решения.</p>
                     </div>
                     <div class="value-card" data-animate="slide-up" data-delay="100">
                         <div class="value-icon">
-                            <img src="img/icon-transparency.svg" alt="Прозрачность">
+                            <i class="fa-solid fa-scale-balanced fa-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="value-title">Прозрачность во всем</h3>
                         <p class="value-description">Открыто говорим о ставках, сроках и процессах. Никаких скрытых условий или неожиданных сюрпризов.</p>
                     </div>
                     <div class="value-card" data-animate="slide-up" data-delay="200">
                         <div class="value-icon">
-                            <img src="img/icon-growth.svg" alt="Развитие">
+                            <i class="fa-solid fa-arrow-trend-up fa-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="value-title">Постоянное развитие</h3>
                         <p class="value-description">Инвестируем в обучение наших специалистов и следим за новейшими трендами в IT-индустрии.</p>
                     </div>
                     <div class="value-card" data-animate="slide-up" data-delay="300">
                         <div class="value-icon">
-                            <img src="img/icon-partnership.svg" alt="Партнерство">
+                            <i class="fa-solid fa-handshake fa-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="value-title">Долгосрочное партнерство</h3>
                         <p class="value-description">Строим отношения не на один проект, а на годы. Многие наши клиенты работают с нами уже более 3 лет.</p>
@@ -265,7 +259,6 @@
             </div>
         </section>
 
-        <!-- Team Section -->
         <section class="team">
             <div class="container">
                 <div class="section-header">
@@ -276,12 +269,7 @@
                     <div class="team-member" data-animate="fade-up">
                         <div class="member-photo">
                             <img src="img/team-anna.jpg" alt="Анна Петрова">
-                            <div class="member-overlay">
-                                <div class="member-social">
-                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
-                                </div>
-                            </div>
+                          
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Анна Петрова</h3>
@@ -297,12 +285,7 @@
                     <div class="team-member" data-animate="fade-up" data-delay="100">
                         <div class="member-photo">
                             <img src="img/team-dmitri.jpg" alt="Дмитрий Козлов">
-                            <div class="member-overlay">
-                                <div class="member-social">
-                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
-                                </div>
-                            </div>
+                        
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Дмитрий Козлов</h3>
@@ -318,12 +301,7 @@
                     <div class="team-member" data-animate="fade-up" data-delay="200">
                         <div class="member-photo">
                             <img src="img/team-elena.jpg" alt="Елена Соколова">
-                            <div class="member-overlay">
-                                <div class="member-social">
-                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="img/social-dribbble.svg" alt="Dribbble"></a>
-                                </div>
-                            </div>
+                           
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Елена Соколова</h3>
@@ -339,12 +317,7 @@
                     <div class="team-member" data-animate="fade-up" data-delay="300">
                         <div class="member-photo">
                             <img src="img/team-marcus.jpg" alt="Маркус Линн">
-                            <div class="member-overlay">
-                                <div class="member-social">
-                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="img/social-twitter.svg" alt="Twitter"></a>
-                                </div>
-                            </div>
+                          
                         </div>
                         <div class="member-info">
                             <h3 class="member-name">Маркус Линн</h3>
@@ -361,7 +334,6 @@
             </div>
         </section>
 
-        <!-- Company Metrics -->
         <section class="metrics">
             <div class="container">
                 <div class="section-header center">
@@ -405,7 +377,6 @@
             </div>
         </section>
 
-        <!-- Trust & Processes -->
         <section class="trust">
             <div class="container">
                 <div class="trust-content">
@@ -414,7 +385,7 @@
                         <div class="trust-features">
                             <div class="trust-feature">
                                 <div class="trust-icon">
-                                    <img src="img/icon-process.svg" alt="Процессы">
+                                    <i class="fa-solid fa-diagram-project fa-2xl" aria-hidden="true"></i>
                                 </div>
                                 <div class="trust-content-text">
                                     <h3>Отлаженные процессы</h3>
@@ -429,7 +400,7 @@
                             </div>
                             <div class="trust-feature">
                                 <div class="trust-icon">
-                                    <img src="img/icon-communication.svg" alt="Коммуникации">
+                                    <i class="fa-solid fa-comments fa-2xl" aria-hidden="true"></i>
                                 </div>
                                 <div class="trust-content-text">
                                     <h3>Прозрачная коммуникация</h3>
@@ -444,7 +415,7 @@
                             </div>
                             <div class="trust-feature">
                                 <div class="trust-icon">
-                                    <img src="img/icon-sla-guarantee.svg" alt="SLA гарантии">
+                                    <i class="fa-solid fa-shield-halved fa-2xl" aria-hidden="true"></i>
                                 </div>
                                 <div class="trust-content-text">
                                     <h3>SLA гарантии</h3>
@@ -480,7 +451,6 @@
             </div>
         </section>
 
-        <!-- Certifications & Awards -->
         <section class="certifications">
             <div class="container">
                 <div class="section-header center">
@@ -495,7 +465,7 @@
                         <span class="cert-year">2023</span>
                     </div>
                     <div class="cert-item" data-animate="scale-in" data-delay="100">
-                        <img src="img/cert-gdpr.svg" alt="GDPR Compliance" class="cert-logo">
+                        <img src="img/icon-document.svg" alt="GDPR Compliance" class="cert-logo">
                         <h3 class="cert-title">GDPR Compliance</h3>
                         <p class="cert-description">Соответствие европейским стандартам защиты данных</p>
                         <span class="cert-year">2024</span>
@@ -516,16 +486,18 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
+        <section class="cta-banner">
             <div class="container">
-                <div class="cta-content center">
-                    <h2 class="cta-title">Готовы к сотрудничеству?</h2>
-                    <p class="cta-description">Давайте обсудим ваш проект и найдем идеальное решение</p>
+                <div class="cta-content">
+                    <h2 class="cta-title reveal" data-animate="true"><span class="underline">Готовы начать проект?</span></h2>
+                    <p class="cta-description">Расскажите о ваших потребностях, и мы подберем идеальную команду специалистов</p>
                     <div class="cta-actions">
-                        <a href="contacts.php" class="btn btn-primary btn-large">Связаться с нами</a>
-                        <a href="offers.php" class="btn btn-secondary btn-large">Посмотреть услуги</a>
+                        <a href="contacts.php" class="btn btn-primary btn-large">Обсудить проект</a>
+                        <a href="offers.php" class="btn btn-secondary btn-large">Посмотреть вакансии</a>
                     </div>
+                </div>
+                <div class="cta-visual">
+                    <img src="img/cta-illustration.jpg" alt="Начать проект" class="cta-image">
                 </div>
             </div>
         </section>
