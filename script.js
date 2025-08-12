@@ -75,6 +75,9 @@ WebTalentApp.setupEventListeners = function() {
             }
         });
     }
+
+    // Initialize FAQ functionality
+    this.initFAQ();
 };
 
 // ===== SCROLL ANIMATIONS =====
@@ -856,7 +859,7 @@ WebTalentApp.initFAQ = function() {
         const toggle = item.querySelector('.faq-toggle');
         
         if (question && answer) {
-            question.addEventListener('click', () => {
+            const toggleFAQ = () => {
                 const isActive = item.classList.contains('active');
                 
                 // Close all other FAQ items
@@ -878,12 +881,18 @@ WebTalentApp.initFAQ = function() {
                     item.classList.add('active');
                     answer.style.maxHeight = answer.scrollHeight + 'px';
                 }
-                
-                // Rotate toggle icon
-                if (toggle) {
-                    toggle.style.transform = isActive ? 'rotate(0deg)' : 'rotate(180deg)';
-                }
-            });
+            };
+            
+            // Add click handler to the entire question div
+            question.addEventListener('click', toggleFAQ);
+            
+            // Also add click handler specifically to toggle button
+            if (toggle) {
+                toggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleFAQ();
+                });
+            }
         }
     });
 };

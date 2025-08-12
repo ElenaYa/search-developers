@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="quick-content">
                                     <!-- TODO: Replace with actual phone -->
-                                    <strong>+372 5554 9123</strong>
+                                    <strong><a href="tel:+37255549123">+372 5554 9123</a></strong>
                                     <p>Звоните в рабочие часы</p>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@
                                     <img src="img/icon-email.svg" alt="Email">
                                 </div>
                                 <div class="quick-content">
-                                    <strong>info@frevonto.com</strong>
+                                    <strong><a href="mailto:info@frevonto.com">info@frevonto.com</a></strong>
                                     <p>Ответим в течение 24 часов</p>
                                 </div>
                             </div>
@@ -317,35 +317,35 @@
                             <div class="contact-details">
                                 <div class="contact-detail">
                                     <div class="detail-icon">
-                                        <img src="img/icon-location.svg" alt="Адрес">
+                                        <img src="img/icon-location.svg" alt="Адрес" class="contact-detail-icon">
                                     </div>
                                     <div class="detail-content">
                                         <h4>Адрес офиса</h4>
                                         <!-- TODO: Replace with actual address -->
-                                        <p><strong>Tartu mnt 25</strong><br>
-                                        10117 Tallinn, Estonia</p>
+                                        <p><a href="https://maps.google.com/?q=Tartu+mnt+25,+10117+Tallinn,+Estonia" target="_blank" rel="noopener" class="contact-link"><strong>Tartu mnt 25</strong><br>
+                                        10117 Tallinn, Estonia</a></p>
                                     </div>
                                 </div>
                                 
                                 <div class="contact-detail">
                                     <div class="detail-icon">
-                                        <img src="img/icon-phone.svg" alt="Телефон">
+                                        <img src="img/icon-phone.svg" alt="Телефон" class="contact-detail-icon">
                                     </div>
                                     <div class="detail-content">
                                         <h4>Телефон</h4>
                                         <!-- TODO: Replace with actual phone -->
-                                        <p><strong>+372 5554 9123</strong><br>
+                                        <p><a href="tel:+37255549123" class="contact-link"><strong>+372 5554 9123</strong></a><br>
                                         Пн-Пт: 9:00-18:00 EET</p>
                                     </div>
                                 </div>
                                 
                                 <div class="contact-detail">
                                     <div class="detail-icon">
-                                        <img src="img/icon-email.svg" alt="Email">
+                                        <img src="img/icon-email.svg" alt="Email" class="contact-detail-icon">
                                     </div>
                                     <div class="detail-content">
                                         <h4>Email</h4>
-                                        <p><strong>info@frevonto.com</strong><br>
+                                        <p><a href="mailto:info@frevonto.com" class="contact-link"><strong>info@frevonto.com</strong></a><br>
                                         Ответим в течение 24 часов</p>
                                     </div>
                                 </div>
@@ -369,25 +369,6 @@
                                 </div>
                                 <p class="hours-note">В нерабочее время отвечаем на email</p>
                             </div>
-                            
-                            <div class="social-links">
-                                <h4>Мы в социальных сетях</h4>
-                                <div class="social-icons">
-                                    <!-- TODO: Add actual social media links -->
-                                    <a href="#" class="social-link">
-                                        <img src="img/social-linkedin.svg" alt="LinkedIn">
-                                        <span>LinkedIn</span>
-                                    </a>
-                                    <a href="#" class="social-link">
-                                        <img src="img/social-github.svg" alt="GitHub">
-                                        <span>GitHub</span>
-                                    </a>
-                                    <a href="#" class="social-link">
-                                        <img src="img/social-telegram.svg" alt="Telegram">
-                                        <span>Telegram</span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,13 +385,7 @@
                 <div class="map-wrapper">
                     <!-- TODO: Replace with actual map embed or interactive map -->
                     <div class="map-placeholder">
-                        <img src="img/tallinn-map.jpg" alt="Карта офиса в Таллине" class="map-image">
-                        <div class="map-overlay">
-                            <div class="map-pin">
-                                <img src="img/icon-map-pin.svg" alt="Наше местоположение">
-                                <span>Frevonto</span>
-                            </div>
-                        </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.973370849346!2d24.760451877119202!3d59.43351867466487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935f6bf6a8c1%3A0x47bb17d1fd6a6622!2sTartu%20mnt%2025%2C%2010117%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2sua!4v1755016230632!5m2!1sen!2sua"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="map-info">
                         <h3>Удобное расположение</h3>
@@ -420,10 +395,6 @@
                             <li>Парковка для посетителей</li>
                             <li>Доступность для людей с ограниченными возможностями</li>
                         </ul>
-                        <div class="directions">
-                            <!-- TODO: Add actual Google Maps or other map service link -->
-                            <a href="#" class="btn btn-secondary">Построить маршрут</a>
-                        </div>
                     </div>
                 </div>
             </div>
