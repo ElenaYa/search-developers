@@ -18,7 +18,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
+                    <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
                     <span class="logo-text">WebTalent<span class="accent">Est</span></span>
                 </div>
                 <nav class="nav">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="hero-visual">
-                        <img src="/img/hero-main.jpg" alt="IT команда за работой" class="hero-image">
+                        <img src="img/hero-main.jpg" alt="IT команда за работой" class="hero-image">
                         <div class="hero-accent"></div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                 <div class="specialists-grid">
                     <div class="specialist-card" data-animate="slide-up">
                         <div class="specialist-icon">
-                            <img src="/img/icon-designer.svg" alt="Дизайнер">
+                            <img src="img/icon-designer.svg" alt="Дизайнер">
                         </div>
                         <h3 class="specialist-title">UI/UX Дизайнеры</h3>
                         <p class="specialist-description">Создание современных интерфейсов и пользовательских сценариев</p>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="100">
                         <div class="specialist-icon">
-                            <img src="/img/icon-frontend.svg" alt="Верстальщик">
+                            <img src="img/icon-frontend.svg" alt="Верстальщик">
                         </div>
                         <h3 class="specialist-title">Frontend разработчики</h3>
                         <p class="specialist-description">HTML5, CSS3, JavaScript, адаптивная верстка</p>
@@ -116,7 +116,7 @@
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="200">
                         <div class="specialist-icon">
-                            <img src="/img/icon-php.svg" alt="PHP разработчик">
+                            <img src="img/icon-php.svg" alt="PHP разработчик">
                         </div>
                         <h3 class="specialist-title">PHP разработчики</h3>
                         <p class="specialist-description">Backend разработка, API, работа с базами данных</p>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="300">
                         <div class="specialist-icon">
-                            <img src="/img/icon-qa.svg" alt="QA специалист">
+                            <img src="img/icon-qa.svg" alt="QA специалист">
                         </div>
                         <h3 class="specialist-title">QA инженеры</h3>
                         <p class="specialist-description">Тестирование, автоматизация, контроль качества</p>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="specialist-card" data-animate="slide-up" data-delay="400">
                         <div class="specialist-icon">
-                            <img src="/img/icon-pm.svg" alt="Project Manager">
+                            <img src="img/icon-pm.svg" alt="Project Manager">
                         </div>
                         <h3 class="specialist-title">Project Manager</h3>
                         <p class="specialist-description">Управление проектами, планирование, координация команд</p>
@@ -166,7 +166,7 @@
                         <div class="offers-list">
                             <div class="offer-item">
                                 <div class="offer-icon">
-                                    <img src="/img/icon-salary.svg" alt="Зарплата">
+                                    <img src="img/icon-salary.svg" alt="Зарплата">
                                 </div>
                                 <div class="offer-content">
                                     <h3>Конкурентные ставки</h3>
@@ -175,7 +175,7 @@
                             </div>
                             <div class="offer-item">
                                 <div class="offer-icon">
-                                    <img src="/img/icon-process.svg" alt="Процессы">
+                                    <img src="img/icon-process.svg" alt="Процессы">
                                 </div>
                                 <div class="offer-content">
                                     <h3>Четкие процессы</h3>
@@ -184,7 +184,7 @@
                             </div>
                             <div class="offer-item">
                                 <div class="offer-icon">
-                                    <img src="/img/icon-transparency.svg" alt="Прозрачность">
+                                    <img src="img/icon-transparency.svg" alt="Прозрачность">
                                 </div>
                                 <div class="offer-content">
                                     <h3>Прозрачные задачи</h3>
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                     <div class="offers-visual">
-                        <img src="/img/team-collaboration.jpg" alt="Командная работа" class="offers-image">
+                        <img src="img/team-collaboration.jpg" alt="Командная работа" class="offers-image">
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-card" data-animate="scale-in">
                         <div class="portfolio-image">
-                            <img src="/img/case-ecommerce.jpg" alt="E-commerce проект">
+                            <img src="img/case-ecommerce.jpg" alt="E-commerce проект">
                             <div class="portfolio-overlay">
                                 <span class="portfolio-category">E-commerce</span>
                             </div>
@@ -266,7 +266,7 @@
                     </div>
                     <div class="portfolio-card" data-animate="scale-in" data-delay="100">
                         <div class="portfolio-image">
-                            <img src="/img/case-corporate.jpg" alt="Корпоративный сайт">
+                            <img src="img/case-corporate.jpg" alt="Корпоративный сайт">
                             <div class="portfolio-overlay">
                                 <span class="portfolio-category">Corporate</span>
                             </div>
@@ -282,7 +282,7 @@
                     </div>
                     <div class="portfolio-card" data-animate="scale-in" data-delay="200">
                         <div class="portfolio-image">
-                            <img src="/img/case-webapp.jpg" alt="Веб-приложение">
+                            <img src="img/case-webapp.jpg" alt="Веб-приложение">
                             <div class="portfolio-overlay">
                                 <span class="portfolio-category">Web App</span>
                             </div>
@@ -312,19 +312,19 @@
                         <h3 class="tech-category-title">Frontend</h3>
                         <div class="tech-icons">
                             <div class="tech-icon">
-                                <img src="/img/tech-html5.svg" alt="HTML5">
+                                <img src="img/tech-html5.svg" alt="HTML5">
                                 <span>HTML5</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-css3.svg" alt="CSS3">
+                                <img src="img/tech-css3.svg" alt="CSS3">
                                 <span>CSS3</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-js.svg" alt="JavaScript">
+                                <img src="img/tech-js.svg" alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-react.svg" alt="React">
+                                            <img src="img/tech-react.svg" alt="React">
                                 <span>React</span>
                             </div>
                         </div>
@@ -333,19 +333,19 @@
                         <h3 class="tech-category-title">Backend</h3>
                         <div class="tech-icons">
                             <div class="tech-icon">
-                                <img src="/img/tech-php.svg" alt="PHP">
+                                <img src="img/tech-php.svg" alt="PHP">
                                 <span>PHP</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-laravel.svg" alt="Laravel">
+                                <img src="img/tech-laravel.svg" alt="Laravel">
                                 <span>Laravel</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-mysql.svg" alt="MySQL">
+                                <img src="img/tech-mysql.svg" alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-nodejs.svg" alt="Node.js">
+                                <img src="img/tech-nodejs.svg" alt="Node.js">
                                 <span>Node.js</span>
                             </div>
                         </div>
@@ -354,19 +354,19 @@
                         <h3 class="tech-category-title">Design & Testing</h3>
                         <div class="tech-icons">
                             <div class="tech-icon">
-                                <img src="/img/tech-figma.svg" alt="Figma">
+                                <img src="img/tech-figma.svg" alt="Figma">
                                 <span>Figma</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-photoshop.svg" alt="Photoshop">
+                                <img src="img/tech-photoshop.svg" alt="Photoshop">
                                 <span>Photoshop</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-cypress.svg" alt="Cypress">
+                                <img src="img/tech-cypress.svg" alt="Cypress">
                                 <span>Cypress</span>
                             </div>
                             <div class="tech-icon">
-                                <img src="/img/tech-postman.svg" alt="Postman">
+                                <img src="img/tech-postman.svg" alt="Postman">
                                 <span>Postman</span>
                             </div>
                         </div>
@@ -387,7 +387,7 @@
                     </div>
                 </div>
                 <div class="cta-visual">
-                    <img src="/img/cta-illustration.svg" alt="Начать проект" class="cta-image">
+                    <img src="img/cta-illustration.svg" alt="Начать проект" class="cta-image">
                 </div>
             </div>
         </section>
@@ -399,15 +399,15 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
+                            <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
                             <span class="logo-text">WebTalent<span class="accent">Est</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
                             <!-- TODO: Add actual social media links -->
-                            <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                            <a href="#" class="social-link"><img src="/img/social-github.svg" alt="GitHub"></a>
-                            <a href="#" class="social-link"><img src="/img/social-telegram.svg" alt="Telegram"></a>
+                            <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
+                            <a href="#" class="social-link"><img src="img/social-telegram.svg" alt="Telegram"></a>
                         </div>
                     </div>
                     <div class="footer-nav">
@@ -444,7 +444,7 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="/img/icon-location.svg" alt="Адрес" class="contact-icon">
+                                    <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual address -->
                                 <strong>[ADDRESS_PLACEHOLDER]</strong><br>
@@ -452,7 +452,7 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-phone.svg" alt="Телефон" class="contact-icon">
+                            <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual phone -->
                                 <strong>+372 6xx xxxx</strong><br>
@@ -460,7 +460,7 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
+                            <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
                                 <strong>hello@[your-domain].eu</strong><br>

@@ -19,7 +19,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
+                    <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
                     <span class="logo-text">WebTalent<span class="accent">Est</span></span>
                 </div>
                 <nav class="nav">
@@ -57,7 +57,7 @@
                         <div class="quick-contact">
                             <div class="quick-contact-item">
                                 <div class="quick-icon">
-                                    <img src="/img/icon-phone.svg" alt="Телефон">
+                                    <img src="img/icon-phone.svg" alt="Телефон">
                                 </div>
                                 <div class="quick-content">
                                     <!-- TODO: Replace with actual phone -->
@@ -67,7 +67,7 @@
                             </div>
                             <div class="quick-contact-item">
                                 <div class="quick-icon">
-                                    <img src="/img/icon-email.svg" alt="Email">
+                                    <img src="img/icon-email.svg" alt="Email">
                                 </div>
                                 <div class="quick-content">
                                     <!-- TODO: Replace with actual email -->
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="contacts-header-visual">
-                        <img src="/img/contact-hero.jpg" alt="Наш офис в Таллине" class="contacts-header-image">
+                        <img src="img/contact-hero.jpg" alt="Наш офис в Таллине" class="contacts-header-image">
                         <div class="contacts-accent"></div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                                 <div class="file-upload-wrapper">
                                     <input type="file" id="contact-file" name="attachment" accept=".pdf,.doc,.docx,.txt">
                                     <label for="contact-file" class="file-upload-label">
-                                        <img src="/img/icon-upload.svg" alt="Загрузить">
+                                        <img src="img/icon-upload.svg" alt="Загрузить">
                                         <span>Выберите файл или перетащите сюда</span>
                                     </label>
                                     <span class="file-name"></span>
@@ -182,7 +182,7 @@
                         <!-- Form Success Message -->
                         <div class="form-success" id="form-success">
                             <div class="success-icon">
-                                <img src="/img/icon-success.svg" alt="Успешно">
+                                <img src="img/icon-success.svg" alt="Успешно">
                             </div>
                             <h3>Сообщение отправлено!</h3>
                             <p>Мы получили ваше сообщение и свяжемся с вами в ближайшее время.</p>
@@ -197,7 +197,7 @@
                             <div class="contact-details">
                                 <div class="contact-detail">
                                     <div class="detail-icon">
-                                        <img src="/img/icon-location.svg" alt="Адрес">
+                                        <img src="img/icon-location.svg" alt="Адрес">
                                     </div>
                                     <div class="detail-content">
                                         <h4>Адрес офиса</h4>
@@ -209,7 +209,7 @@
                                 
                                 <div class="contact-detail">
                                     <div class="detail-icon">
-                                        <img src="/img/icon-phone.svg" alt="Телефон">
+                                        <img src="img/icon-phone.svg" alt="Телефон">
                                     </div>
                                     <div class="detail-content">
                                         <h4>Телефон</h4>
@@ -221,7 +221,7 @@
                                 
                                 <div class="contact-detail">
                                     <div class="detail-icon">
-                                        <img src="/img/icon-email.svg" alt="Email">
+                                        <img src="img/icon-email.svg" alt="Email">
                                     </div>
                                     <div class="detail-content">
                                         <h4>Email</h4>
@@ -256,15 +256,15 @@
                                 <div class="social-icons">
                                     <!-- TODO: Add actual social media links -->
                                     <a href="#" class="social-link">
-                                        <img src="/img/social-linkedin.svg" alt="LinkedIn">
+                                        <img src="img/social-linkedin.svg" alt="LinkedIn">
                                         <span>LinkedIn</span>
                                     </a>
                                     <a href="#" class="social-link">
-                                        <img src="/img/social-github.svg" alt="GitHub">
+                                        <img src="img/social-github.svg" alt="GitHub">
                                         <span>GitHub</span>
                                     </a>
                                     <a href="#" class="social-link">
-                                        <img src="/img/social-telegram.svg" alt="Telegram">
+                                        <img src="img/social-telegram.svg" alt="Telegram">
                                         <span>Telegram</span>
                                     </a>
                                 </div>
@@ -285,10 +285,10 @@
                 <div class="map-wrapper">
                     <!-- TODO: Replace with actual map embed or interactive map -->
                     <div class="map-placeholder">
-                        <img src="/img/tallinn-map.jpg" alt="Карта офиса в Таллине" class="map-image">
+                        <img src="img/tallinn-map.jpg" alt="Карта офиса в Таллине" class="map-image">
                         <div class="map-overlay">
                             <div class="map-pin">
-                                <img src="/img/icon-map-pin.svg" alt="Наше местоположение">
+                                <img src="img/icon-map-pin.svg" alt="Наше местоположение">
                                 <span>WebTalent Est</span>
                             </div>
                         </div>
@@ -322,7 +322,7 @@
                         <div class="faq-question">
                             <h3>Как быстро вы отвечаете на запросы?</h3>
                             <button class="faq-toggle">
-                                <img src="/img/icon-chevron-down.svg" alt="Развернуть">
+                                <img src="img/icon-chevron-down.svg" alt="Развернуть">
                             </button>
                         </div>
                         <div class="faq-answer">
@@ -334,7 +334,7 @@
                         <div class="faq-question">
                             <h3>Работаете ли вы с международными клиентами?</h3>
                             <button class="faq-toggle">
-                                <img src="/img/icon-chevron-down.svg" alt="Развернуть">
+                                <img src="img/icon-chevron-down.svg" alt="Развернуть">
                             </button>
                         </div>
                         <div class="faq-answer">
@@ -346,7 +346,7 @@
                         <div class="faq-question">
                             <h3>Какие способы оплаты вы принимаете?</h3>
                             <button class="faq-toggle">
-                                <img src="/img/icon-chevron-down.svg" alt="Развернуть">
+                                <img src="img/icon-chevron-down.svg" alt="Развернуть">
                             </button>
                         </div>
                         <div class="faq-answer">
@@ -358,7 +358,7 @@
                         <div class="faq-question">
                             <h3>Предоставляете ли вы техническую поддержку после завершения проекта?</h3>
                             <button class="faq-toggle">
-                                <img src="/img/icon-chevron-down.svg" alt="Развернуть">
+                                <img src="img/icon-chevron-down.svg" alt="Развернуть">
                             </button>
                         </div>
                         <div class="faq-answer">
@@ -370,7 +370,7 @@
                         <div class="faq-question">
                             <h3>Можно ли посетить ваш офис для личной встречи?</h3>
                             <button class="faq-toggle">
-                                <img src="/img/icon-chevron-down.svg" alt="Развернуть">
+                                <img src="img/icon-chevron-down.svg" alt="Развернуть">
                             </button>
                         </div>
                         <div class="faq-answer">
@@ -387,7 +387,7 @@
                 <div class="alt-contact-content">
                     <div class="alt-method">
                         <div class="alt-icon">
-                            <img src="/img/icon-calendar.svg" alt="Запланировать встречу">
+                            <img src="img/icon-calendar.svg" alt="Запланировать встречу">
                         </div>
                         <div class="alt-content">
                             <h3>Запланировать встречу</h3>
@@ -399,7 +399,7 @@
                     
                     <div class="alt-method">
                         <div class="alt-icon">
-                            <img src="/img/icon-chat.svg" alt="Онлайн чат">
+                            <img src="img/icon-chat.svg" alt="Онлайн чат">
                         </div>
                         <div class="alt-content">
                             <h3>Онлайн чат</h3>
@@ -410,7 +410,7 @@
                     
                     <div class="alt-method">
                         <div class="alt-icon">
-                            <img src="/img/icon-document.svg" alt="Техническое задание">
+                            <img src="img/icon-document.svg" alt="Техническое задание">
                         </div>
                         <div class="alt-content">
                             <h3>Техническое задание</h3>
@@ -430,15 +430,15 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
+                            <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
                             <span class="logo-text">WebTalent<span class="accent">Est</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
                             <!-- TODO: Add actual social media links -->
-                            <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                            <a href="#" class="social-link"><img src="/img/social-github.svg" alt="GitHub"></a>
-                            <a href="#" class="social-link"><img src="/img/social-telegram.svg" alt="Telegram"></a>
+                            <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
+                            <a href="#" class="social-link"><img src="img/social-telegram.svg" alt="Telegram"></a>
                         </div>
                     </div>
                     <div class="footer-nav">
@@ -475,7 +475,7 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="/img/icon-location.svg" alt="Адрес" class="contact-icon">
+                            <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual address -->
                                 <strong>[ADDRESS_PLACEHOLDER]</strong><br>
@@ -483,7 +483,7 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-phone.svg" alt="Телефон" class="contact-icon">
+                            <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual phone -->
                                 <strong>+372 6xx xxxx</strong><br>
@@ -491,7 +491,7 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
+                            <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
                                 <strong>hello@[your-domain].eu</strong><br>

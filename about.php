@@ -18,7 +18,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
+                    <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
                     <span class="logo-text">WebTalent<span class="accent">Est</span></span>
                 </div>
                 <nav class="nav">
@@ -54,7 +54,7 @@
                     <p class="page-description">Мы объединяем талантливых IT-специалистов с амбициозными проектами, создавая успешные веб-решения в Эстонии</p>
                 </div>
                 <div class="page-header-visual">
-                    <img src="/img/about-hero.jpg" alt="Команда WebTalent Est" class="page-header-image">
+                    <img src="img/about-hero.jpg" alt="Команда WebTalent Est" class="page-header-image">
                 </div>
             </div>
         </section>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="story-visual">
-                        <img src="/img/office-tallinn.jpg" alt="Офис в Таллине" class="story-image">
+                        <img src="img/office-tallinn.jpg" alt="Офис в Таллине" class="story-image">
                         <div class="story-accent"></div>
                     </div>
                 </div>
@@ -114,28 +114,28 @@
                 <div class="values-grid">
                     <div class="value-card" data-animate="slide-up">
                         <div class="value-icon">
-                            <img src="/img/icon-quality.svg" alt="Качество">
+                            <img src="img/icon-quality.svg" alt="Качество">
                         </div>
                         <h3 class="value-title">Качество превыше скорости</h3>
                         <p class="value-description">Мы выбираем специалистов не только по техническим навыкам, но и по способности работать в команде и создавать качественные решения.</p>
                     </div>
                     <div class="value-card" data-animate="slide-up" data-delay="100">
                         <div class="value-icon">
-                            <img src="/img/icon-transparency.svg" alt="Прозрачность">
+                            <img src="img/icon-transparency.svg" alt="Прозрачность">
                         </div>
                         <h3 class="value-title">Прозрачность во всем</h3>
                         <p class="value-description">Открыто говорим о ставках, сроках и процессах. Никаких скрытых условий или неожиданных сюрпризов.</p>
                     </div>
                     <div class="value-card" data-animate="slide-up" data-delay="200">
                         <div class="value-icon">
-                            <img src="/img/icon-growth.svg" alt="Развитие">
+                            <img src="img/icon-growth.svg" alt="Развитие">
                         </div>
                         <h3 class="value-title">Постоянное развитие</h3>
                         <p class="value-description">Инвестируем в обучение наших специалистов и следим за новейшими трендами в IT-индустрии.</p>
                     </div>
                     <div class="value-card" data-animate="slide-up" data-delay="300">
                         <div class="value-icon">
-                            <img src="/img/icon-partnership.svg" alt="Партнерство">
+                            <img src="img/icon-partnership.svg" alt="Партнерство">
                         </div>
                         <h3 class="value-title">Долгосрочное партнерство</h3>
                         <p class="value-description">Строим отношения не на один проект, а на годы. Многие наши клиенты работают с нами уже более 3 лет.</p>
@@ -154,11 +154,11 @@
                 <div class="team-grid">
                     <div class="team-member" data-animate="fade-up">
                         <div class="member-photo">
-                            <img src="/img/team-anna.jpg" alt="Анна Петрова">
+                            <img src="img/team-anna.jpg" alt="Анна Петрова">
                             <div class="member-overlay">
                                 <div class="member-social">
-                                    <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="/img/social-github.svg" alt="GitHub"></a>
+                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                                    <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
                                 </div>
                             </div>
                         </div>
@@ -175,11 +175,11 @@
                     </div>
                     <div class="team-member" data-animate="fade-up" data-delay="100">
                         <div class="member-photo">
-                            <img src="/img/team-dmitri.jpg" alt="Дмитрий Козлов">
+                            <img src="img/team-dmitri.jpg" alt="Дмитрий Козлов">
                             <div class="member-overlay">
                                 <div class="member-social">
-                                    <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="/img/social-github.svg" alt="GitHub"></a>
+                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                                    <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
                                 </div>
                             </div>
                         </div>
@@ -196,11 +196,11 @@
                     </div>
                     <div class="team-member" data-animate="fade-up" data-delay="200">
                         <div class="member-photo">
-                            <img src="/img/team-elena.jpg" alt="Елена Соколова">
+                            <img src="img/team-elena.jpg" alt="Елена Соколова">
                             <div class="member-overlay">
                                 <div class="member-social">
-                                    <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="/img/social-dribbble.svg" alt="Dribbble"></a>
+                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                                    <a href="#" class="social-link"><img src="img/social-dribbble.svg" alt="Dribbble"></a>
                                 </div>
                             </div>
                         </div>
@@ -217,11 +217,11 @@
                     </div>
                     <div class="team-member" data-animate="fade-up" data-delay="300">
                         <div class="member-photo">
-                            <img src="/img/team-marcus.jpg" alt="Маркус Линн">
+                            <img src="img/team-marcus.jpg" alt="Маркус Линн">
                             <div class="member-overlay">
                                 <div class="member-social">
-                                    <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                                    <a href="#" class="social-link"><img src="/img/social-twitter.svg" alt="Twitter"></a>
+                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                                    <a href="#" class="social-link"><img src="img/social-twitter.svg" alt="Twitter"></a>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +250,7 @@
                 <div class="metrics-grid">
                     <div class="metric-card" data-animate="counter">
                         <div class="metric-icon">
-                            <img src="/img/icon-projects.svg" alt="Проекты">
+                            <img src="img/icon-projects.svg" alt="Проекты">
                         </div>
                         <div class="metric-number" data-count="240">0</div>
                         <div class="metric-label">Завершенных проектов</div>
@@ -258,7 +258,7 @@
                     </div>
                     <div class="metric-card" data-animate="counter" data-delay="100">
                         <div class="metric-icon">
-                            <img src="/img/icon-specialists.svg" alt="Специалисты">
+                                    <img src="img/icon-specialists.svg" alt="Специалисты">
                         </div>
                         <div class="metric-number" data-count="150">0</div>
                         <div class="metric-label">IT-специалистов в базе</div>
@@ -266,7 +266,7 @@
                     </div>
                     <div class="metric-card" data-animate="counter" data-delay="200">
                         <div class="metric-icon">
-                            <img src="/img/icon-sla.svg" alt="SLA">
+                            <img src="img/icon-sla.svg" alt="SLA">
                         </div>
                         <div class="metric-number" data-count="98.5">0</div>
                         <div class="metric-label">% выполнения SLA</div>
@@ -274,7 +274,7 @@
                     </div>
                     <div class="metric-card" data-animate="counter" data-delay="300">
                         <div class="metric-icon">
-                            <img src="/img/icon-nps.svg" alt="NPS">
+                            <img src="img/icon-nps.svg" alt="NPS">
                         </div>
                         <div class="metric-number" data-count="84">0</div>
                         <div class="metric-label">NPS оценка</div>
@@ -293,7 +293,7 @@
                         <div class="trust-features">
                             <div class="trust-feature">
                                 <div class="trust-icon">
-                                    <img src="/img/icon-process.svg" alt="Процессы">
+                                    <img src="img/icon-process.svg" alt="Процессы">
                                 </div>
                                 <div class="trust-content-text">
                                     <h3>Отлаженные процессы</h3>
@@ -308,7 +308,7 @@
                             </div>
                             <div class="trust-feature">
                                 <div class="trust-icon">
-                                    <img src="/img/icon-communication.svg" alt="Коммуникации">
+                                    <img src="img/icon-communication.svg" alt="Коммуникации">
                                 </div>
                                 <div class="trust-content-text">
                                     <h3>Прозрачная коммуникация</h3>
@@ -323,7 +323,7 @@
                             </div>
                             <div class="trust-feature">
                                 <div class="trust-icon">
-                                    <img src="/img/icon-sla-guarantee.svg" alt="SLA гарантии">
+                                    <img src="img/icon-sla-guarantee.svg" alt="SLA гарантии">
                                 </div>
                                 <div class="trust-content-text">
                                     <h3>SLA гарантии</h3>
@@ -339,7 +339,7 @@
                         </div>
                     </div>
                     <div class="trust-visual">
-                        <img src="/img/quality-process.jpg" alt="Процесс контроля качества" class="trust-image">
+                        <img src="img/quality-process.jpg" alt="Процесс контроля качества" class="trust-image">
                         <div class="trust-stats">
                             <div class="trust-stat">
                                 <span class="trust-stat-number">24ч</span>
@@ -368,25 +368,25 @@
                 </div>
                 <div class="cert-grid">
                     <div class="cert-item" data-animate="scale-in">
-                        <img src="/img/cert-iso.svg" alt="ISO 27001" class="cert-logo">
+                        <img src="img/cert-iso.svg" alt="ISO 27001" class="cert-logo">
                         <h3 class="cert-title">ISO 27001</h3>
                         <p class="cert-description">Международный стандарт информационной безопасности</p>
                         <span class="cert-year">2023</span>
                     </div>
                     <div class="cert-item" data-animate="scale-in" data-delay="100">
-                        <img src="/img/cert-gdpr.svg" alt="GDPR Compliance" class="cert-logo">
+                        <img src="img/cert-gdpr.svg" alt="GDPR Compliance" class="cert-logo">
                         <h3 class="cert-title">GDPR Compliance</h3>
                         <p class="cert-description">Соответствие европейским стандартам защиты данных</p>
                         <span class="cert-year">2024</span>
                     </div>
                     <div class="cert-item" data-animate="scale-in" data-delay="200">
-                        <img src="/img/award-best-employer.svg" alt="Best IT Employer" class="cert-logo">
+                        <img src="img/award-best-employer.svg" alt="Best IT Employer" class="cert-logo">
                         <h3 class="cert-title">Best IT Employer</h3>
                         <p class="cert-description">Лучший работодатель в IT сфере Эстонии</p>
                         <span class="cert-year">2024</span>
                     </div>
                     <div class="cert-item" data-animate="scale-in" data-delay="300">
-                        <img src="/img/cert-startup.svg" alt="Startup Estonia" class="cert-logo">
+                        <img src="img/cert-startup.svg" alt="Startup Estonia" class="cert-logo">
                         <h3 class="cert-title">Startup Estonia</h3>
                         <p class="cert-description">Партнер государственной программы поддержки стартапов</p>
                         <span class="cert-year">2022</span>
@@ -416,15 +416,15 @@
                 <div class="footer-main">
                     <div class="footer-brand">
                         <div class="logo">
-                            <img src="/img/logo.svg" alt="WebTalent Est" class="logo-img">
+                            <img src="img/logo.svg" alt="WebTalent Est" class="logo-img">
                             <span class="logo-text">WebTalent<span class="accent">Est</span></span>
                         </div>
                         <p class="footer-description">Находим лучших IT-специалистов для веб-проектов в Эстонии</p>
                         <div class="footer-social">
                             <!-- TODO: Add actual social media links -->
-                            <a href="#" class="social-link"><img src="/img/social-linkedin.svg" alt="LinkedIn"></a>
-                            <a href="#" class="social-link"><img src="/img/social-github.svg" alt="GitHub"></a>
-                            <a href="#" class="social-link"><img src="/img/social-telegram.svg" alt="Telegram"></a>
+                                    <a href="#" class="social-link"><img src="img/social-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" class="social-link"><img src="img/social-github.svg" alt="GitHub"></a>
+                            <a href="#" class="social-link"><img src="img/social-telegram.svg" alt="Telegram"></a>
                         </div>
                     </div>
                     <div class="footer-nav">
@@ -461,7 +461,7 @@
                 <div class="footer-contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="/img/icon-location.svg" alt="Адрес" class="contact-icon">
+                            <img src="img/icon-location.svg" alt="Адрес" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual address -->
                                 <strong>[ADDRESS_PLACEHOLDER]</strong><br>
@@ -469,7 +469,7 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-phone.svg" alt="Телефон" class="contact-icon">
+                            <img src="img/icon-phone.svg" alt="Телефон" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual phone -->
                                 <strong>+372 6xx xxxx</strong><br>
@@ -477,7 +477,7 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <img src="/img/icon-email.svg" alt="Email" class="contact-icon">
+                                <img src="img/icon-email.svg" alt="Email" class="contact-icon">
                             <div>
                                 <!-- TODO: Replace with actual email -->
                                 <strong>hello@[your-domain].eu</strong><br>
